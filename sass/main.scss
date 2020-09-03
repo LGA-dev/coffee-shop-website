@@ -12,10 +12,17 @@ html {
   background-image: url('/img/hero-bg.jpg');
   background-position: center;
   background-size: cover;
-  // margin: 0;
+}
+
+#about {
+  height: 100%;
 }
 
 // * {
 //   border: 1px solid red !important;
 //   background: black !important;
 // }
+
+.row {
+  border: 1px solid red;
+}
