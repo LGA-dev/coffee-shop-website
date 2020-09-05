@@ -22,6 +22,10 @@ html {
   height: 100%;
 }
 
+#gallery {
+  height: 100%;
+}
+
 // * {
 //   border: 1px solid red !important;
 //   background: black !important;
@@ -29,6 +33,29 @@ html {
 
 .imagecover {
   object-fit: cover;
+}
+
+.carousel-image {
+  // border: 1px solid red;
+  height: 600px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  // border: 1px solid red;
+  width: 50px;
+
+  &-icon{
+  // border: 1px solid blue;
+  height: 50px;
+  width: 50px;
+  }
+}
+
+.carousel-caption {
+  p {
+    font-size: 1.5rem;
+  }
 }
 
 .fadeIn {
