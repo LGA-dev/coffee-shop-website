@@ -26,6 +26,10 @@ html {
   height: 100%;
 }
 
+#news {
+  height: 100%;
+}
+
 // * {
 //   border: 1px solid red !important;
 //   background: black !important;
@@ -56,6 +60,11 @@ html {
   p {
     font-size: 1.5rem;
   }
+}
+
+.gradientbackground {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.695098107602416) 12%, rgba(255,255,255,0) 100%); 
 }
 
 .fadeIn {
