@@ -298,6 +298,7 @@
             <div class="card text-white">
               <img class="card-img imagecover" src="/img/event.jpg" alt="">
               <div class="card-img-overlay d-flex flex-column justify-content-end  gradientbackground">
+                <h6 class="card-subtitle mb-2 text-success">Event</h6>
                 <h2 class="card-title">Rock Live Concert</h2>
                 <p class="card-text">October 3, 2020</p>
               </div>
@@ -307,6 +308,7 @@
             <div class="card text-white">
               <img class="card-img imagecover" src="/img/news.jpg" alt="">
               <div class="card-img-overlay d-flex flex-column justify-content-end  gradientbackground">
+                <h6 class="card-subtitle mb-2 text-info">News</h6>
                 <h2 class="card-title">Greece month</h2>
                 <p class="card-text">October 14, 2020</p>
               </div>
@@ -317,6 +319,65 @@
         <div class="text-center my-4">
           <button class="btn btn-success">See all news</button>
         </div>
+    </section>
+    <section id="reservation" class="section py-5">
+      <div class="container">
+        <!-- Section title -->
+        <h1 class="text-center my-5">Reserve a table</h1>
+        <form id="reservation-form">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="name">First Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="surname">Last Name</label>
+              <input type="text" class="form-control" id="surname">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="phone">Phone</label>
+              <input type="text" class="form-control" id="phone" placeholder="11-2222-4444">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="persons">Number of persons</label>
+              <select id="persons" class="form-control">
+                <option selected>1-2 People</option>
+                <option>3-4 People</option>
+                <option>4+ People</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="date">Select your date</label>
+              <input type="text" class="form-control" id="date" placeholder="25/12/2020">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-12">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-control" cols="30" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-12 d-flex justify-content-between align-items-center flex-column flex-md-row">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check">
+                <label class="form-check-label" for="check">
+                  I've read and agree with the Terms & Policy
+                </label>
+              </div>
+              <button type="submit" class="btn btn-success">Send reservation</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
     <section id="contact" class="section py-5"></section>
   </main>
