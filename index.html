@@ -114,141 +114,143 @@
     <section id="menu" class="section py-5">
       <div class="container">
         <!-- Section title -->
-        <h1 class="text-center my-5">Our menu</h1>
+        <h1 class="text-center my-5 font-weight-bold">Our menu</h1>
         <!-- Section buttons -->
-        <div class="btn-group d-flex my-3">
-          <button class="btn btn-info" onclick="selectTypeAll()">All</button>
-          <button class="btn btn-info" onclick="selectDrinksType()">Drinks</button>
-          <button class="btn btn-info" onclick="selectDesertsType()">Deserts</button>
-          <button class="btn btn-info" onclick="selectSnacksType()">Snacks</button>
+        <div class="d-flex justify-content-center">
+          <div class="btn-group my-3">
+            <button id="button-all" class="btn btn-dark px-4" onclick="selectTypeAll()">All</button>
+            <button id="button-drinks" class="btn btn-dark px-4" onclick="selectDrinksType()">Drinks</button>
+            <button id="button-deserts" class="btn btn-dark px-4" onclick="selectDesertsType()">Deserts</button>
+            <button id="button-snacks" class="btn btn-dark px-4" onclick="selectSnacksType()">Snacks</button>
+          </div>
         </div>
         <!-- Section grid -->
         <div class="row row-cols-2">
           <!-- Coffee Card -->
-          <div class="col my-3 drinks">
+          <div class="col-12 col-md-6 my-3 drinks">
             <div class="card">
               <div class="row no-gutters">
                 <div class="col-4">
-                  <img src="/img/hot-drink.jpg" class="img-fluid h-100 imagecover rounded" alt="Responsive image">
+                  <img src="/img/hot-drink.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
                 </div>
                 <div class="col-8 p-3  d-flex flex-column justify-content-center align-items-left">
-                  <h2>Hot Drinks</h2>
+                  <h3>Hot Drinks</h3>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
-                  <button class="btn btn-dark w-50">Purchase</button>
+                  <button class="btn btn-primary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Crepes Card -->
-          <div class="col my-3 snacks">
+          <div class="col-12 col-md-6 my-3 snacks">
             <div class="card">
               <div class="row no-gutters">
                 <div class="col-4">
-                  <img src="/img/crepes.jpg" class="img-fluid h-100 imagecover rounded" alt="Responsive image">
+                  <img src="/img/crepes.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
                 </div>
                 <div class="col-8 p-3 d-flex flex-column justify-content-center align-items-left">
-                  <h2>Crepes</h2>
+                  <h3>Crepes</h3>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
-                  <button class="btn btn-danger w-50">Purchase</button>
+                  <button class="btn btn-primary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Juices Card -->
-          <div class="col my-3 drinks">
+          <div class="col-12 col-md-6 my-3 drinks">
             <div class="card">
               <div class="row no-gutters">
                 <div class="col-4">
-                  <img src="/img/cold-drink.jpg" class="img-fluid h-100 imagecover rounded" alt="Responsive image">
+                  <img src="/img/cold-drink.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
                 </div>
                 <div class="col-8 p-3 d-flex flex-column justify-content-center align-items-left">
-                  <h2>Cold Drinks</h2>
+                  <h3>Cold Drinks</h3>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
-                  <button class="btn btn-info w-50">Purchase</button>
+                  <button class="btn btn-primary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Pizza Card -->
-          <div class="col my-3 snacks">
+          <div class="col-12 col-md-6 my-3 snacks">
             <div class="card">
               <div class="row no-gutters">
                 <div class="col-4">
-                  <img src="/img/pizza.jpg" class="img-fluid h-100 imagecover rounded" alt="Responsive image">
+                  <img src="/img/pizza.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
                 </div>
                 <div class="col-8 p-3 d-flex flex-column justify-content-center align-items-left">
-                  <h2>Pizza</h2>
+                  <h3>Pizza</h3>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
-                  <button class="btn btn-success w-50">Purchase</button>
+                  <button class="btn btn-primary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Sandwiches Card -->
-          <div class="col my-3 snacks">
+          <div class="col-12 col-md-6 my-3 snacks">
             <div class="card">
               <div class="row no-gutters">
                 <div class="col-4">
-                  <img src="/img/sandwiches.jpg" class="img-fluid h-100 imagecover rounded" alt="Responsive image">
+                  <img src="/img/sandwiches.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
                 </div>
                 <div class="col-8 p-3 d-flex flex-column justify-content-center align-items-left">
-                  <h2>Sandwiches</h2>
+                  <h3>Sandwiches</h3>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
-                  <button class="btn btn-warning w-50">Purchase</button>
+                  <button class="btn btn-primary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Churros Card -->
-          <div class="col my-3 deserts">
+          <div class="col-12 col-md-6 my-3 deserts">
             <div class="card">
               <div class="row no-gutters">
                 <div class="col-4">
-                  <img src="/img/churros.jpg" class="img-fluid h-100 imagecover rounded" alt="Responsive image">
+                  <img src="/img/churros.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
                 </div>
                 <div class="col-8 p-3 d-flex flex-column justify-content-center align-items-left">
-                  <h2>Churros</h2>
+                  <h3>Churros</h3>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
-                  <button class="btn btn-link w-50">Purchase</button>
+                  <button class="btn btn-primary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Donuts Card -->
-          <div class="col my-3 deserts">
+          <div class="col-12 col-md-6 my-3 deserts">
             <div class="card">
               <div class="row no-gutters">
                 <div class="col-4">
-                  <img src="/img/donuts.jpg" class="img-fluid h-100 imagecover rounded" alt="Responsive image">
+                  <img src="/img/donuts.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
                 </div>
                 <div class="col-8 p-3 d-flex flex-column justify-content-center align-items-left">
-                  <h2>Donuts</h2>
+                  <h3>Donuts</h3>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
-                  <button class="btn btn-primary w-50">Purchase</button>
+                  <button class="btn btn-primary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Cupcakes Card -->
-          <div class="col my-3 deserts">
+          <div class="col-12 col-md-6 my-3 deserts">
             <div class="card">
               <div class="row no-gutters">
                 <div class="col-4">
-                  <img src="/img/cupcakes.jpg" class="img-fluid h-100 imagecover rounded" alt="Responsive image">
+                  <img src="/img/cupcakes.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
                 </div>
                 <div class="col-8 p-3 d-flex flex-column justify-content-center align-items-left">
-                  <h2>Cupcakes</h2>
+                  <h3>Cupcakes</h3>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
-                  <button class="btn btn-secondary w-50">Purchase</button>
+                  <button class="btn btn-primary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- Section button -->
-        <div class="text-center my-4">
-          <button class="btn btn-success">Reservation</button>
-        </div>
+        <!-- <div class="text-center my-4">
+          <button class="btn btn-warning">Reservation</button>
+        </div> -->
       </div>
     </section>
     <!-- Gallery section -->
