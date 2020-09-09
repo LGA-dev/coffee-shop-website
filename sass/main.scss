@@ -1,37 +1,30 @@
 html {
   scroll-behavior: smooth;
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 300)));
+}
+
+.btn {
+  width: max-content;
+}
+
+.hero-heading {
+  font-size: 4rem;
+}
+
+.hero-sub-heading {
+  font-size: 2rem;
 }
 
 .section {
   background: gray;
-  height: 100vh;
+  height: 100%;
   border: 1px solid cyan;
 }
 
 #hero {
-  background-image: url('/img/hero-bg.jpg');
+  background-image: url("/img/hero-bg.jpg");
   background-position: center;
   background-size: cover;
-}
-
-#about {
-  height: 100%;
-}
-
-#menu {
-  height: 100%;
-}
-
-#gallery {
-  height: 100%;
-}
-
-#news {
-  height: 100%;
-}
-
-#reservation {
-  height: 100%;
 }
 
 #reservation .container {
@@ -64,69 +57,32 @@ html {
   margin-right: 2rem;
 }
 
-// * {
-//   border: 1px solid red !important;
-//   background: black !important;
-// }
-
 .imagecover {
   object-fit: cover;
 }
 
 .carousel-image {
-  // border: 1px solid red;
   height: 600px;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  // border: 1px solid red;
   width: 50px;
 
-  &-icon{
-  // border: 1px solid blue;
-  height: 50px;
-  width: 50px;
-  }
-}
-
-.carousel-caption {
-  p {
-    font-size: 1.5rem;
+  &-icon {
+    height: 50px;
+    width: 50px;
   }
 }
 
 .gradientbackground {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0.695098107602416) 12%, rgba(255,255,255,0) 100%); 
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.695098107602416) 12%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
-.fadeIn {
-  animation: fade-in 1s;
-  display: block;
-  color: green !important;
-}
-
-.fadeOut {
-  animation: fade-out 1s;
-  display: none;
-  color: red !important;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
+@import "mediaqueries";
+@import "animations";
