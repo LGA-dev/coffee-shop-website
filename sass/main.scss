@@ -37,11 +37,6 @@ html {
   align-items: center;
 }
 
-#reservation-form {
-  border: 1px solid red;
-  width: 66%;
-}
-
 #contact {
   height: 100%;
 }
@@ -88,5 +83,10 @@ html {
   );
 }
 
+.custom-control-input {
+  color: red;
+}
+
 @import "mediaqueries";
 @import "animations";
+@import "checkbox";

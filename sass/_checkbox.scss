@@ -1,0 +1,20 @@
+//Change this color later
+
+.custom-control-input:focus~.custom-control-label::before {
+  border-color: #28a745 !important;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  border-color: #28a745 !important;
+  background-color: #28a745 !important;
+}
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+  border-color: #5bd778 !important;
+}
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+  background-color: #d6f5dd !important;
+  border-color: #d6f5dd !important;
+}
