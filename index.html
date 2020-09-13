@@ -349,15 +349,24 @@
         <h1 class="text-center my-5 font-weight-bold">Lastest reviews</h1>
         <div class="row">
           <!-- Review card -->
-          <div class="d-flex col-6">
+          <div class="d-flex col-12 col-lg-6">
             <div class="card bg-light px-4 py-2">
               <div class="row d-flex p-2">
                   <div class="">
-                    <img class="profile-pic imagecover mr-3" src="/img/about-3.jpg">
+                    <img class="profile-pic imagecover rounded-circle mr-3" src="/img/review-1.jpg">
                   </div>
                   <div class="d-flex flex-column">
                       <h3 class="p-0 m-0">John Doe</h3>
-                      <p>Rating</p>
+                      <div>
+                        <p class="text-left">
+                          <span class="text-muted font-weight-bold">5</span>
+                          <span><i class="fas fa-star text-warning"></i></span>
+                          <span><i class="fas fa-star text-warning"></i></span>
+                          <span><i class="fas fa-star text-warning"></i></span>
+                          <span><i class="fas fa-star text-warning"></i></span>
+                          <span><i class="fas fa-star text-warning"></i></span>
+                        </p>
+                      </div>
                   </div>
                   <div class="ml-auto">
                       <p class="text-muted p-0 m-0">10 Sept</p>
@@ -369,47 +378,64 @@
               </div>
               <div class="row text-left">
                   <div class="d-flex text-success mr-3">
-                    <p class="p-2 m-0">#</p>
+                    <p class="p-2 m-0">
+                      <i class="fas fa-thumbs-up"></i>
+                    </p>
                     <span class="p-2">20</span>
                   </div>
                   <div class="d-flex text-danger">
-                    <p class="p-2 m-0">#</p>
+                    <p class="p-2 m-0">
+                      <i class="fas fa-thumbs-down"></i>
+                    </p>
                     <span class="p-2">4</span>
                   </div>
               </div>
             </div>
           </div>
           <!-- Review card -->
-          <div class="d-flex col-6">
+          <div class="d-flex col-12 col-lg-6 mt-4 mt-lg-0">
             <div class="card bg-light px-4 py-2">
               <div class="row d-flex p-2">
                   <div class="">
-                    <img class="profile-pic imagecover mr-3" src="/img/about-3.jpg">
+                    <img class="profile-pic imagecover rounded-circle mr-3" src="/img/review-2.jpg">
                   </div>
                   <div class="d-flex flex-column">
-                      <h3 class="p-0 m-0">John Doe</h3>
-                      <p>Rating</p>
+                      <h3 class="p-0 m-0">Jane Doe</h3>
+                      <div>
+                        <p class="text-left">
+                          <span class="text-muted font-weight-bold">3.0</span>
+                          <span><i class="fas fa-star text-warning"></i></span>
+                          <span><i class="fas fa-star text-warning"></i></span>
+                          <span><i class="fas fa-star text-warning"></i></span>
+                          <span><i class="far fa-star text-warning"></i></span>
+                          <span><i class="far fa-star text-warning"></i></span>
+                        </p>
+                      </div>
                   </div>
                   <div class="ml-auto">
-                      <p class="text-muted p-0 m-0">10 Sept</p>
+                      <p class="text-muted p-0 m-0">2 Sept</p>
                   </div>
               </div>
               <div class="row text-left my-2">
-                  <h4 class="text-primary p-2 m-0">"Lorem ipsum dolor sit amet"</h4>
-                  <p class="card-text p-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eum quod harum ipsa ipsum, esse ut cumque sit eligendi dignissimos.</p>
+                  <h4 class="text-primary p-2 m-0">"Lorem ipsum dolor"</h4>
+                  <p class="card-text p-2 m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptatibus sequi molestias autem hic ab quasi quo.</p>
               </div>
               <div class="row text-left">
                   <div class="d-flex text-success mr-3">
-                    <p class="p-2 m-0">#</p>
-                    <span class="p-2">20</span>
+                    <p class="p-2 m-0">
+                      <i class="fas fa-thumbs-up"></i>
+                    </p>
+                    <span class="p-2">31</span>
                   </div>
                   <div class="d-flex text-danger">
-                    <p class="p-2 m-0">#</p>
-                    <span class="p-2">4</span>
+                    <p class="p-2 m-0">
+                      <i class="fas fa-thumbs-down"></i>
+                    </p>
+                    <span class="p-2">2</span>
                   </div>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
     </section>
@@ -484,37 +510,45 @@
           <div class="col-12 col-md-6 col-lg-3 my-3">
             <div class="card h-100 border-0 p-1">
               <div class="card-body d-flex flex-column align-items-center text-center  border-right border-left">
-                <div class="card-icon py-3">#</div>
+                <div class="card-icon py-3">
+                  <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                </div>
                 <div class="card-subtitle text-muted py-3 m-0">By appointment only</div>
-                <a class="text-body text-primary" href="https://www.google.com/maps/place/Caf%C3%A9+Mart%C3%ADnez/@-34.5799389,-58.4123057,17z/data=!3m1!4b1!4m8!1m2!2m1!1scafe!3m4!1s0x95bcb57b93229659:0xad3fc4da177a320d!8m2!3d-34.5799389!4d-58.410117">Av. Cerviño 3602,<br> C1425 AGS,<br> Buenos Aires</a>
+                <a class="text-body" href="https://www.google.com/maps/place/Caf%C3%A9+Mart%C3%ADnez/@-34.5799389,-58.4123057,17z/data=!3m1!4b1!4m8!1m2!2m1!1scafe!3m4!1s0x95bcb57b93229659:0xad3fc4da177a320d!8m2!3d-34.5799389!4d-58.410117">Av. Cerviño 3602,<br> C1425 AGS,<br> Buenos Aires</a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-3">
             <div class="card h-100 border-0 p-1">
               <div class="card-body d-flex flex-column align-items-center text-center  border-right border-left">
-                <div class="card-icon py-3">#</div>
+                <div class="card-icon py-3">
+                  <i class="fas fa-phone-alt fa-2x text-primary"></i>
+                </div>
                 <div class="card-subtitle text-muted py-3 m-0">Mobile phone</div>
-                <a class="text-body text-primary" href="tel:11-4444-5555">+54 11 4444-5555</a>
+                <a class="text-body" href="tel:11-4444-5555">+54 11 4444-5555</a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-3">
             <div class="card h-100 border-0 p-1">
               <div class="card-body d-flex flex-column align-items-center text-center  border-right border-left">
-                <div class="card-icon py-3">#</div>
+                <div class="card-icon py-3">
+                  <i class="fas fa-clock fa-2x text-primary"></i>
+                </div>
                 <div class="card-subtitle text-muted py-3 m-0">Working hours</div>
-                <p class="text-body text-primary mb-0">Tuesday - Sunday</p>
-                <p class="text-body text-primary">9:00 AM - 9:00 PM</p>
+                <p class="text-body mb-0">Tuesday - Sunday</p>
+                <p class="text-body">9:00 AM - 9:00 PM</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-3">
             <div class="card h-100 border-0 p-1">
               <div class="card-body d-flex flex-column align-items-center text-center  border-right border-left">
-                <div class="card-icon py-3">#</div>
+                <div class="card-icon py-3">
+                  <i class="fas fa-envelope fa-2x text-primary"></i>
+                </div>
                 <div class="card-subtitle text-muted py-3 m-0">Email</div>
-                <a class="text-body text-primary" href="mailto:name@email.com">websitename@gmail.com</a>
+                <a class="text-body" href="mailto:name@email.com">websitename@gmail.com</a>
               </div>
             </div>
           </div>
@@ -539,14 +573,22 @@
           <div class="d-flex align-items-center justify-content-between">
             <a class="navbar-brand text-primary" href="#">WebsiteName</a>
             <div class="social-icons d-flex">
-              <div class="icon">#</div>
-              <div class="icon">#</div>
-              <div class="icon">#</div>
+              <a class="icon text-primary" href="#">
+                <i class="fab fa-facebook-square fa-lg"></i>
+              </a>
+              <a class="icon text-primary" href="#">
+                <i class="fab fa-twitter-square fa-lg"></i>
+              </a>
+              <a class="icon text-primary" href="#">
+                <i class="fab fa-whatsapp-square fa-lg"></i>
+              </a>
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-2 d-none d-lg-flex justify-content-center">
-          <div class="icon">#</div>
+          <a class="icon text-secondary" href="#">
+            <i class="fas fa-arrow-alt-circle-up fa-lg"></i>
+          </a>
         </div>
         <div class="col-12 col-md-6 col-lg-5">
           <div class="d-flex justify-content-around">
@@ -561,6 +603,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/bf3de74a9d.js" crossorigin="anonymous"></script>
   <script src="/js/main.js"></script>
 
 </body>
