@@ -1,7 +1,7 @@
 @import "variables";
 @import "custom";
 @import "animations";
-@import "mediaqueries";
+
 
 
 html {
@@ -60,7 +60,8 @@ html {
 }
 
 .carousel-image {
-  height: 600px;
+  height: 400px;
+  // border: 10px solid indigo;
 }
 
 .carousel-control-prev,
@@ -89,3 +90,5 @@ html {
 html body.experiment-cta-bar-blue.device-other div.wz-iframe-header {
   background: red !important;
 }
+
+@import "mediaqueries";

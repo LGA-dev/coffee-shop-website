@@ -4,17 +4,26 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {  
-
+  .carousel-image {
+    height: 450px;
+    // border: 10px solid orange;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-
+  .carousel-image {
+    height: 500px;
+    // border: 10px solid green;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-
+  .carousel-image {
+    height: 600px;
+    // border: 10px solid red;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
