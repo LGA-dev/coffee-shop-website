@@ -9,6 +9,10 @@ html {
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 300)));
 }
 
+.section {
+  height: 100%;
+}
+
 .btn {
   width: max-content;
 }
@@ -24,10 +28,6 @@ html {
 
 .hero-sub-heading {
   font-size: 2rem;
-}
-
-.section {
-  height: 100%;
 }
 
 .text-shadow {
@@ -49,7 +49,6 @@ html {
 #map.col-12 {
   height: 500px;
   width: 50vw;
-  background: rgba(0, 128, 0, 0.568);
 }
 
 .icon {
@@ -83,3 +82,10 @@ html {
   );
 }
 
+.wz-iframe-header {
+  background: #368532;
+}
+
+html body.experiment-cta-bar-blue.device-other div.wz-iframe-header {
+  background: red !important;
+}
