@@ -110,3 +110,39 @@ let selectSnacksType = function () {
   console.log(cardsToHide.length)
   console.log(cardsToShow.length)
 }
+
+// Change navbar background color on scroll
+let navigationBar = document.getElementById("navbar");
+
+function stickyNavbar() {
+  window.addEventListener("scroll", () => {
+      let fromTop = window.scrollY;
+
+      // Change navbar background color
+      if (fromTop > 1) {
+        navigationBar.classList.add("bg-white");
+        navigationBar.classList.remove("bg-transparent");
+        navigationBar.classList.add("navbar-light");
+        navigationBar.classList.remove("navbar-dark");
+        navigationBar.classList.add("navbar-transition");
+        navigationBar.classList.add("shadow");
+      } else {
+        navigationBar.classList.remove("bg-white");
+        navigationBar.classList.add("bg-transparent");
+        navigationBar.classList.remove("navbar-light");
+        navigationBar.classList.add("navbar-dark");
+        navigationBar.classList.remove("shadow");
+      }
+
+      // Change navbar size
+      if (fromTop > 50) {
+          document.getElementById("navbar").style.height = "4rem";
+      } else {
+          document.getElementById("navbar").style.height = "6rem";
+      }
+
+  });
+  // window.alert("TEST");
+}
+
+stickyNavbar();
