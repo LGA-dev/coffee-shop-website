@@ -10,6 +10,10 @@ html {
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 300)));
 }
 
+body {
+  position: relative; 
+}
+
 .section {
   height: 100%;
 }
