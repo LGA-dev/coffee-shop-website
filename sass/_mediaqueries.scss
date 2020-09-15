@@ -6,15 +6,14 @@
 @media (min-width: 576px) {  
   .carousel-image {
     height: 450px;
-    // border: 10px solid orange;
   }
+
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .carousel-image {
     height: 500px;
-    // border: 10px solid green;
   }
 }
 
@@ -22,7 +21,16 @@
 @media (min-width: 992px) {
   .carousel-image {
     height: 600px;
-    // border: 10px solid red;
+  }
+
+  // Why this doesn't work unless I set it to important
+  .sidebar-section {
+    position: absolute !important;
+    border: 10px solid yellow;
+  }
+
+  .sidebar-item {
+    position: absolute !important;
   }
 }
 

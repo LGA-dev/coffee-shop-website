@@ -40,6 +40,10 @@ a.text-primary:focus {
   color: $primary-color-dark !important;
 }
 
+.text-primary-light {
+  color: $primary-color-light !important;
+}
+
 // Text secondary
 .text-secondary {
   color: $secondary-color !important;
