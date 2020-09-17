@@ -78,25 +78,115 @@
     <section>
       <div class="container">
         <div class="row">
+          <!-- Content section -->
           <div class="col-12 col-lg-8">
             <div class="content-section">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi, ducimus totam numquam tenetur
-                temporibus consequuntur in sed consectetur voluptate quam dolorem eaque reprehenderit ad. Rem praesentium
-                dolores at, saepe deleniti natus corporis. Sequi exercitationem in magni iure. Optio quaerat doloremque,
-                eos minus tempore exercitationem molestiae dicta dolorem debitis. Officiis.
-              </p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi, ducimus totam numquam tenetur
-                temporibus consequuntur in sed consectetur voluptate quam dolorem eaque reprehenderit ad. Rem praesentium
-                dolores at, saepe deleniti natus corporis. Sequi exercitationem in magni iure. Optio quaerat doloremque,
-                eos minus tempore exercitationem molestiae dicta dolorem debitis. Officiis.
-              </p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi, ducimus totam numquam tenetur
-                temporibus consequuntur in sed consectetur voluptate quam dolorem eaque reprehenderit ad. Rem praesentium
-                dolores at, saepe deleniti natus corporis. Sequi exercitationem in magni iure. Optio quaerat doloremque,
-                eos minus tempore exercitationem molestiae dicta dolorem debitis. Officiis.
-              </p>
+
+              <!-- Accordion -->
+              <div class="accordion" id="onlineOrderAccordion">
+
+                <!-- Panel heading -->
+                <div class="panel-header bg-light border-0 d-flex align-items-center" id="headingMyOrder" data-toggle="collapse" data-target="#collapseMyOrder" aria-expanded="true" aria-controls="collapseMyOrder">
+                  <!-- Panel number -->
+                  <div class="panel-header-item mr-3 bg-primary">
+                    <p class="m-0">
+                      1
+                    </p>
+                  </div>
+                  <!-- Panel title -->
+                  <div class="panel-header-title">
+                    <a class="m-0 mr-3">
+                      My order
+                    </a>
+                  </div>
+                  <!-- Panel icon -->
+                  <div class="panel-header-item ml-auto">
+                    <i class="fas fa-chevron-up"></i>
+                  </div>
+                </div>
+
+                <!-- Content to collapse -->
+                <div id="collapseMyOrder" class="collapse show mt-3" aria-label="headingMyOrder" data-parent="#onlineOrderAccordion">
+
+                  <!-- Card body 1-->
+                  <div class="card d-flex flex-row align-items-center p-4 mb-2">
+                    <!-- Card image -->
+                    <img class="mr-3 imagecover" src="/img/menu-hot-drink.jpg" width="90" height="90" alt="">
+                    <!-- Card text -->
+                    <div class="card-text mr-5">
+                      <strong>Hot Coffee</strong>
+                      <p class="text-muted m-0">This is an item on your menu.<br>
+                        Give your item a brief description</p>
+                    </div>
+                    <!-- Card inputs -->
+                    <div class="d-flex align-items-end align-items-md-center flex-column flex-md-row mr-auto">
+                      <!-- Input group -->
+                      <div class="input-group">
+                        <!-- Delete button -->
+                        <div class="input-group-prepend">
+                          <button class="btn btn-dark btn-square ">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                        </div>
+                        <!-- X button -->
+                        <input type="text" class="form-control border-light text-center form-total-items" value="2">
+                        <!-- Add button -->
+                        <div class="input-group-append">
+                          <button class="btn btn-dark btn-square ">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Price tag -->
+                    <div class="price">
+                      <p class="m-0">$<strong>20</strong></p>
+                    </div>
+                  </div>
+
+                  <!-- Card body 2-->
+                  <div class="card d-flex flex-row align-items-center p-4 mb-2">
+                    <!-- Card image -->
+                    <img class="mr-3 imagecover" src="/img/menu-cold-drink.jpg" width="90" height="90" alt="">
+                    <!-- Card text -->
+                    <div class="card-text mr-5">
+                      <strong>Juice</strong>
+                      <p class="text-muted m-0">This is an item on your menu.<br>
+                        Give your item a brief description</p>
+                    </div>
+                    <!-- Card inputs -->
+                    <div class="d-flex align-items-end align-items-md-center flex-column flex-md-row mr-auto">
+                      <!-- Input group -->
+                      <div class="input-group">
+                        <!-- Delete button -->
+                        <div class="input-group-prepend">
+                          <button class="btn btn-dark btn-square ">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                        </div>
+                        <!-- X button -->
+                        <input type="text" class="form-control border-light text-center form-total-items" value="5">
+                        <!-- Add button -->
+                        <div class="input-group-append">
+                          <button class="btn btn-dark btn-square ">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Price tag -->
+                    <div class="price">
+                      <p class="m-0">$<strong>10</strong></p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              
             </div>
           </div>
+          <!-- Sidebar section -->
           <div class="col-12 col-lg-4" >
             <div class="sidebar-section">
               <div class="sidebar-item">

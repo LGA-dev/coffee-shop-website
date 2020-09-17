@@ -139,5 +139,33 @@ html body.experiment-cta-bar-blue.device-other div.wz-iframe-header {
   padding: 0 15px;
 }
 
+
+
+
+.panel-header {
+  cursor: pointer;
+
+  &-item {
+    text-align: center;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form-total-items {
+  min-width: 75px;
+  max-width: 75px;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+
+.text-muted {
+  font-size: 0.9rem;
+}
 // Media queries always have to be at the end of style sheet
 @import "mediaqueries";
