@@ -58,7 +58,7 @@ a.text-secondary:focus {
 // Background primary
 
 .bg-primary {
-  background-color: $primary-color !important;
+  background-color: $primary-color-light !important;
 }
 
 //Custom checkbox
@@ -85,6 +85,5 @@ a.text-secondary:focus {
 // Custom radio
 .custom-radio,
 .custom-control-label {
-  color: red;
   cursor: pointer;
 }

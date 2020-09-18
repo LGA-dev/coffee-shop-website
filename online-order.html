@@ -17,54 +17,7 @@
 </head>
 
 <body class="text-dark" data-spy="scroll" data-target=".navbar" data-offset="0">
-
-  <!-- Header section -->
-  <header id="header">
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg bg-transparent navbar-dark" id="navbar">
-      <!-- Container -->
-      <div class="container">
-
-        <!-- Header link -->
-        <a class="navbar-brand" href="#">WebsiteName</a>
-
-        <!-- Navigation bar toggler button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigation links -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <!-- ml-auto aligns the unordered list items to the right -->
-            <li class="nav-item">
-              <a class="nav-link" href="#hero">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#menu">Our Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#news">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Order online</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
+  
   <main>
     <!-- Jumbotron section -->
     <section id="jumbotron" class="jumbotron jumbotron-fluid bg-dark text-white">
@@ -88,7 +41,7 @@
 
                 <!-- My order section -->
                 <!-- Panel heading -->
-                <div class="panel-header bg-light border-0 d-flex align-items-center" id="headingMyOrder" data-toggle="collapse" data-target="#collapseMyOrder" aria-expanded="true" aria-controls="collapseMyOrder">
+                <div class="panel-header bg-dark text-light d-flex align-items-center" id="headingMyOrder" data-toggle="collapse" data-target="#collapseMyOrder" aria-expanded="true" aria-controls="collapseMyOrder">
                   <!-- Panel number -->
                   <div class="panel-header-item mr-3 bg-primary">
                     <p class="m-0">
@@ -107,15 +60,17 @@
                   </div>
                 </div>
                 <!-- Content to collapse -->
-                <div id="collapseMyOrder" class="collapse show mt-3" aria-label="headingMyOrder" data-parent="#onlineOrderAccordion">
+                <div id="collapseMyOrder" class="collapse show" aria-label="headingMyOrder" data-parent="#onlineOrderAccordion">
 
                   <!-- Card body (Order one)-->
-                  <div class="card d-flex flex-row align-items-center p-4 mb-2">
+                  <div class="card d-flex flex-row align-items-center p-4 bg-light">
                     <!-- Card image -->
                     <img class="mr-3 imagecover" src="/img/menu-hot-drink.jpg" width="90" height="90" alt="">
                     <!-- Card text -->
                     <div class="card-text mr-5">
-                      <strong>Hot Coffee</strong>
+                      <h5 class="font-weight-bold">
+                        Hot Coffee
+                      </h5>
                       <p class="text-muted m-0">This is an item on your menu.<br>
                         Give your item a brief description</p>
                     </div>
@@ -146,12 +101,14 @@
                   </div>
 
                   <!-- Card body (Order two)-->
-                  <div class="card d-flex flex-row align-items-center p-4 mb-2">
+                  <div class="card d-flex flex-row align-items-center p-4 bg-light">
                     <!-- Card image -->
                     <img class="mr-3 imagecover" src="/img/menu-cold-drink.jpg" width="90" height="90" alt="">
                     <!-- Card text -->
                     <div class="card-text mr-5">
-                      <strong>Orange Juice</strong>
+                      <h5 class="font-weight-bold">
+                        Orange Juice
+                      </h5>
                       <p class="text-muted m-0">This is an item on your menu.<br>
                         Give your item a brief description</p>
                     </div>
@@ -185,7 +142,7 @@
 
                 <!-- Address section -->
                 <!-- Panel heading -->
-                <div class="panel-header bg-light border-0 d-flex align-items-center" id="headingAddress" data-toggle="collapse" data-target="#collapseAddress" aria-expanded="true" aria-controls="collapseAddress">
+                <div class="panel-header bg-dark text-light d-flex align-items-center" id="headingAddress" data-toggle="collapse" data-target="#collapseAddress" aria-expanded="true" aria-controls="collapseAddress">
                   <!-- Panel number -->
                   <div class="panel-header-item mr-3 bg-primary">
                     <p class="m-0">
@@ -204,23 +161,25 @@
                   </div>
                 </div>
                 <!-- Content to collapse -->
-                <div id="collapseAddress" class="collapse show mt-3" aria-label="headingAddress" data-parent="#onlineOrderAccordion">
-                  <!-- Form radio -->
-                  <div class="form-group">
-                    <div class="form-label">
-                      Location
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="customRadioDelivery" name="customRadioShippingType" class="custom-control-input">
-                      <label class="custom-control-label" for="customRadioDelivery">Delivery</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="customRadioPickUp" name="customRadioShippingType" class="custom-control-input">
-                      <label class="custom-control-label" for="customRadioPickUp">Pick up</label>
-                    </div>
-                  </div>
+                <div id="collapseAddress" class="collapse show" aria-label="headingAddress" data-parent="#onlineOrderAccordion">
                   <!-- Form section -->
-                  <form id="shipping-form" class="w-100">
+                  <form class="bg-light p-4 border w-100">
+                    <div class="form-group">
+                      <div class="form-label">
+                        <h5 class="font-weight-bold mb-2">
+                          Choose the delivery method
+                        </h5>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioDelivery" name="customRadioShippingType" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioDelivery">Delivery</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioPickUp" name="customRadioShippingType" class="custom-control-input">
+                        <!-- Choosing this should disable every input below -->
+                        <label class="custom-control-label" for="customRadioPickUp">Pick up</label>
+                      </div>
+                    </div>
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="name">First Name</label>
@@ -242,7 +201,7 @@
                       </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-12">
+                      <div class="form-group col-12 mb-0">
                         <label for="message">Message</label>
                         <textarea id="message" class="form-control" cols="30" rows="5"></textarea>
                       </div>
@@ -252,7 +211,7 @@
 
                 <!-- Payment section -->
                 <!-- Panel heading -->
-                <div class="panel-header bg-light border-0 d-flex align-items-center" id="headingPayment" data-toggle="collapse" data-target="#collapsePayment" aria-expanded="true" aria-controls="collapsePayment">
+                <div class="panel-header bg-dark text-light d-flex align-items-center" id="headingPayment" data-toggle="collapse" data-target="#collapsePayment" aria-expanded="true" aria-controls="collapsePayment">
                   <!-- Panel number -->
                   <div class="panel-header-item mr-3 bg-primary">
                     <p class="m-0">
@@ -271,42 +230,43 @@
                   </div>
                 </div>
                 <!-- Content to collapse -->
-                <div id="collapsePayment" class="collapse show mt-3" aria-label="headingPayment" data-parent="#onlineOrderAccordion">
-                  <!-- Form radio -->
-                  <div class="form-group">
-                    <div class="form-label">
-                      Choose payment method
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="customRadioCashLocation" name="customRadioPaymentType" class="custom-control-input">
-                      <!-- Choosing this should disable every input below -->
-                      <label class="custom-control-label" for="customRadioCashLocation">Cash at location</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="customRadioCashCreditCard" name="customRadioPaymentType" class="custom-control-input">
-                      <label class="custom-control-label" for="customRadioCashCreditCard">Credit card</label>
-                    </div>
-                  </div>
+                <div id="collapsePayment" class="collapse show" aria-label="headingPayment" data-parent="#onlineOrderAccordion">
                   <!-- Form section -->
-                  <form id="shipping-form" class="w-50">
+                  <form class="bg-light p-4 border w-100">
+                    <div class="form-group">
+                      <div class="form-label">
+                        <h5 class="font-weight-bold mb-2">
+                          Choose the payment method
+                        </h5>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioCashCreditCard" name="customRadioPaymentType" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioCashCreditCard">Credit card</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioCashLocation" name="customRadioPaymentType" class="custom-control-input">
+                        <!-- Choosing this should disable every input below -->
+                        <label class="custom-control-label" for="customRadioCashLocation">Cash at location</label>
+                      </div>
+                    </div>
                     <div class="form-row">
-                      <div class="form-group col-12">
+                      <div class="form-group col-8">
                         <label for="cc-number">Card number</label>
                         <input type="text" class="form-control" id="cc-number" placeholder="1234-5678-9012">
                       </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-12">
+                      <div class="form-group col-8">
                         <label for="cc-name">Name on card</label>
                         <input type="text" class="form-control" id="cc-name" placeholder="John Doe">
                       </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-8">
+                      <div class="form-group col-6 mb-0">
                         <label for="cc-date">Expiry date</label>
                         <input type="text" class="form-control" id="cc-date" placeholder="12-2020">
                       </div>
-                      <div class="form-group col-4">
+                      <div class="form-group col-2 mb-0">
                         <!-- Add popout later -->
                         <label for="cc-cvc">CVC</label>
                         <input type="text" class="form-control" id="cc-cvc" placeholder="C592">
@@ -314,7 +274,6 @@
                     </div>
                   </form>
                 </div>
-
               </div>
             </div>
           </div>
@@ -322,7 +281,7 @@
           <div class="col-12 col-lg-4" >
             <div class="sidebar-section">
               <div class="sidebar-item">
-                <div class="make-me-sticky bg-light p-4">
+                <div class="make-me-sticky bg-light border p-4">
                   <div class="sidebar-title mt-2">
                     <strong>My order</strong>
                   </div>
