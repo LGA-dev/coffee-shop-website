@@ -81,3 +81,10 @@ a.text-secondary:focus {
   background-color: #d6f5dd !important;
   border-color: #d6f5dd !important;
 }
+
+// Custom radio
+.custom-radio,
+.custom-control-label {
+  color: red;
+  cursor: pointer;
+}

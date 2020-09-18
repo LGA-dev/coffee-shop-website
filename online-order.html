@@ -86,6 +86,8 @@
               <!-- Accordion -->
               <div class="accordion" id="onlineOrderAccordion">
 
+                <!-- My order section -->
+
                 <!-- Panel heading -->
                 <div class="panel-header bg-light border-0 d-flex align-items-center" id="headingMyOrder" data-toggle="collapse" data-target="#collapseMyOrder" aria-expanded="true" aria-controls="collapseMyOrder">
                   <!-- Panel number -->
@@ -105,11 +107,10 @@
                     <i class="fas fa-chevron-up"></i>
                   </div>
                 </div>
-
                 <!-- Content to collapse -->
                 <div id="collapseMyOrder" class="collapse show mt-3" aria-label="headingMyOrder" data-parent="#onlineOrderAccordion">
 
-                  <!-- Card body 1-->
+                  <!-- Card body (Order one)-->
                   <div class="card d-flex flex-row align-items-center p-4 mb-2">
                     <!-- Card image -->
                     <img class="mr-3 imagecover" src="/img/menu-hot-drink.jpg" width="90" height="90" alt="">
@@ -145,7 +146,7 @@
                     </div>
                   </div>
 
-                  <!-- Card body 2-->
+                  <!-- Card body (Order two)-->
                   <div class="card d-flex flex-row align-items-center p-4 mb-2">
                     <!-- Card image -->
                     <img class="mr-3 imagecover" src="/img/menu-cold-drink.jpg" width="90" height="90" alt="">
@@ -183,8 +184,73 @@
 
                 </div>
 
+                <!-- Address section -->
+                <!-- Panel heading -->
+                <div class="panel-header bg-light border-0 d-flex align-items-center" id="headingAddress" data-toggle="collapse" data-target="#collapseAddress" aria-expanded="true" aria-controls="collapseAddress">
+                  <!-- Panel number -->
+                  <div class="panel-header-item mr-3 bg-primary">
+                    <p class="m-0">
+                      2
+                    </p>
+                  </div>
+                  <!-- Panel title -->
+                  <div class="panel-header-title">
+                    <a class="m-0 mr-3">
+                      Address
+                    </a>
+                  </div>
+                  <!-- Panel icon -->
+                  <div class="panel-header-item ml-auto">
+                    <i class="fas fa-chevron-up"></i>
+                  </div>
+                </div>
+                <!-- Content to collapse -->
+                <div id="collapseAddress" class="collapse show mt-3" aria-label="headingAddress" data-parent="#onlineOrderAccordion">
+                  <!-- Form radio -->
+                  <div class="form-group">
+                    <div class="form-label">
+                      Location
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioDelivery" name="customRadioShippingType" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioDelivery">Delivery</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioPickUp" name="customRadioShippingType" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioPickUp">Pick up</label>
+                    </div>
+                  </div>
+                  <!-- Form section -->
+                  <form id="shipping-form" class="w-100">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="name">First Name</label>
+                        <input type="text" class="form-control" id="name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="surname">Last Name</label>
+                        <input type="text" class="form-control" id="surname">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="form-control" id="phone" placeholder="11-2222-4444">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="Calle 123">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-12">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" cols="30" rows="5"></textarea>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
-              
             </div>
           </div>
           <!-- Sidebar section -->
