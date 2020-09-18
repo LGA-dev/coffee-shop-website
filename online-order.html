@@ -87,7 +87,6 @@
               <div class="accordion" id="onlineOrderAccordion">
 
                 <!-- My order section -->
-
                 <!-- Panel heading -->
                 <div class="panel-header bg-light border-0 d-flex align-items-center" id="headingMyOrder" data-toggle="collapse" data-target="#collapseMyOrder" aria-expanded="true" aria-controls="collapseMyOrder">
                   <!-- Panel number -->
@@ -250,6 +249,72 @@
                     </div>
                   </form>
                 </div>
+
+                <!-- Payment section -->
+                <!-- Panel heading -->
+                <div class="panel-header bg-light border-0 d-flex align-items-center" id="headingPayment" data-toggle="collapse" data-target="#collapsePayment" aria-expanded="true" aria-controls="collapsePayment">
+                  <!-- Panel number -->
+                  <div class="panel-header-item mr-3 bg-primary">
+                    <p class="m-0">
+                      3
+                    </p>
+                  </div>
+                  <!-- Panel title -->
+                  <div class="panel-header-title">
+                    <a class="m-0 mr-3">
+                      Payment
+                    </a>
+                  </div>
+                  <!-- Panel icon -->
+                  <div class="panel-header-item ml-auto">
+                    <i class="fas fa-chevron-up"></i>
+                  </div>
+                </div>
+                <!-- Content to collapse -->
+                <div id="collapsePayment" class="collapse show mt-3" aria-label="headingPayment" data-parent="#onlineOrderAccordion">
+                  <!-- Form radio -->
+                  <div class="form-group">
+                    <div class="form-label">
+                      Choose payment method
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioCashLocation" name="customRadioPaymentType" class="custom-control-input">
+                      <!-- Choosing this should disable every input below -->
+                      <label class="custom-control-label" for="customRadioCashLocation">Cash at location</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioCashCreditCard" name="customRadioPaymentType" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioCashCreditCard">Credit card</label>
+                    </div>
+                  </div>
+                  <!-- Form section -->
+                  <form id="shipping-form" class="w-50">
+                    <div class="form-row">
+                      <div class="form-group col-12">
+                        <label for="cc-number">Card number</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="1234-5678-9012">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-12">
+                        <label for="cc-name">Name on card</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="John Doe">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-8">
+                        <label for="cc-date">Expiry date</label>
+                        <input type="text" class="form-control" id="cc-date" placeholder="12-2020">
+                      </div>
+                      <div class="form-group col-4">
+                        <!-- Add popout later -->
+                        <label for="cc-cvc">CVC</label>
+                        <input type="text" class="form-control" id="cc-cvc" placeholder="C592">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
               </div>
             </div>
           </div>
