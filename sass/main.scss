@@ -8,10 +8,19 @@
 html {
   scroll-behavior: smooth;
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 300)));
+  height: 100%;
 }
 
 body {
-  position: relative; 
+    min-height:100%; 
+    position:relative; 
+    padding-bottom: 6rem;
+}
+
+#footer { 
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+    height: 6rem;
 }
 
 .section {
@@ -106,12 +115,12 @@ html body.experiment-cta-bar-blue.device-other div.wz-iframe-header {
 //   height: 100vh;
 // }
 
-.content-section {
-  min-height: auto;
-}
+// .content-section {
+//   min-height: auto;
+// }
 
 .jumbotron {
-  height: 30vh;
+  height: 10rem;
 }
 
 .sidebar-section {
@@ -140,7 +149,7 @@ html body.experiment-cta-bar-blue.device-other div.wz-iframe-header {
 }
 
 section#orders div.container {
-  min-height: 400px;
+  // min-height: 50vh;
 }
 
 
