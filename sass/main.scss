@@ -9,6 +9,7 @@ html {
   scroll-behavior: smooth;
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 300)));
   height: 100%;
+  overflow-y: scroll;
 }
 
 body {
