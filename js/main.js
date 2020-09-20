@@ -146,3 +146,46 @@ function stickyNavbar() {
 }
 
 stickyNavbar();
+
+// Delivery radio status check
+
+let pickUpRadio =  document.getElementById('custom-radio-pickup');
+
+let deliveryAddressInput =  document.getElementById('delivery-address-input');
+
+function deliveryRadioCheck() {
+  // If true, add the disabled attribute to the input, otherwise remove it
+  if (pickUpRadio.checked) {
+    deliveryAddressInput.disabled = "disabled";
+  } else {
+    deliveryAddressInput.disabled = "";
+  }
+}
+
+deliveryRadioCheck();
+
+// Payment radio status check
+
+let cashAtLocationRadio =  document.getElementById('custom-radio-cash-at-location');
+
+let creditCardNumberInput =  document.getElementById('cc-number');
+let creditCardNameInput =  document.getElementById('cc-name');
+let creditCardDateInput =  document.getElementById('cc-date');
+let creditCardCVCInput =  document.getElementById('cc-cvc');
+
+function paymentRadioCheck() {
+  // If true, add the disabled attribute to the input, otherwise remove it
+  if (cashAtLocationRadio.checked) {
+    creditCardNumberInput.disabled = "disabled";
+    creditCardNameInput.disabled = "disabled";
+    creditCardDateInput.disabled = "disabled";
+    creditCardCVCInput.disabled = "disabled";
+  } else {
+    creditCardNumberInput.disabled = "";
+    creditCardNameInput.disabled = "";
+    creditCardDateInput.disabled = "";
+    creditCardCVCInput.disabled = "";
+  }
+}
+
+paymentRadioCheck();
