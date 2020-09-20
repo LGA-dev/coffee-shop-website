@@ -13,15 +13,15 @@ html {
 }
 
 body {
-    min-height:100%; 
-    position:relative; 
-    padding-bottom: 6rem;
+  min-height:100%; 
+  position:relative; 
+  padding-bottom: 6rem;
 }
 
 #footer { 
-    position: absolute; 
-    left: 0 ; right: 0; bottom: 0; 
-    height: 6rem;
+  position: absolute; 
+  left: 0 ; right: 0; bottom: 0; 
+  height: 6rem;
 }
 
 .section {
@@ -30,6 +30,14 @@ body {
 
 .btn {
   width: max-content;
+}
+
+#navbar {
+  height: 5rem;
+}
+
+#navbar_nonfixed {
+  height: 5rem;
 }
 
 .navbar-brand {

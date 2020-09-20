@@ -135,10 +135,10 @@ function stickyNavbar() {
       }
 
       // Change navbar size
-      if (fromTop > 50) {
+      if (fromTop > 0) {
           document.getElementById("navbar").style.height = "4rem";
       } else {
-          document.getElementById("navbar").style.height = "6rem";
+          document.getElementById("navbar").style.height = "5rem";
       }
 
   });
