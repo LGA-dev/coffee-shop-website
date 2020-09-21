@@ -158,11 +158,9 @@ function deliveryRadioCheck() {
   if (pickUpRadio.checked) {
     deliveryAddressInput.disabled = "disabled";
   } else {
-    deliveryAddressInput.disabled = "";
+    deliveryAddressInput.removeAttribute('disabled');
   }
 }
-
-deliveryRadioCheck();
 
 // Payment radio status check
 
@@ -181,11 +179,9 @@ function paymentRadioCheck() {
     creditCardDateInput.disabled = "disabled";
     creditCardCVCInput.disabled = "disabled";
   } else {
-    creditCardNumberInput.disabled = "";
-    creditCardNameInput.disabled = "";
-    creditCardDateInput.disabled = "";
-    creditCardCVCInput.disabled = "";
+    creditCardNumberInput.removeAttribute('disabled');
+    creditCardNameInput.removeAttribute('disabled');
+    creditCardDateInput.removeAttribute('disabled');
+    creditCardCVCInput.removeAttribute('disabled');
   }
 }
-
-paymentRadioCheck();
