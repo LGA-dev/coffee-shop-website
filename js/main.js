@@ -134,11 +134,15 @@ function stickyNavbar() {
         navigationBar.classList.remove("shadow");
       }
 
+      let websiteLogo = document.getElementById("website-logo");
+
       // Change navbar size
       if (fromTop > 0) {
           document.getElementById("navbar").style.height = "4rem";
+          websiteLogo.src = 'img/brew-right-logo-dark.png';
       } else {
           document.getElementById("navbar").style.height = "5rem";
+          websiteLogo.src = 'img/brew-right-logo-light.png';
       }
 
   });
