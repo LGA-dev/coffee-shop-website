@@ -62,6 +62,12 @@ a.text-secondary:focus {
   background-color: $primary-color !important;
 }
 
+// Border
+
+.border-primary {
+  border-color: $primary-color-light !important;
+}
+
 //Custom checkbox
 
 .custom-control-input:focus~.custom-control-label::before {
