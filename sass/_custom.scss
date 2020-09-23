@@ -41,7 +41,8 @@
 
 a.text-primary:hover,
 a.text-primary:focus {
-  color: $primary-color-dark !important;
+  color: $primary-color-light !important;
+  text-decoration: underline;
 }
 
 // Text secondary
