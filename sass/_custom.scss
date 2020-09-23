@@ -1,7 +1,7 @@
 // Button primary
 .btn-primary {
-  background-color: $primary-color-light !important;
-  border-color: $primary-color-light !important;
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
 }
 
 .btn-primary:hover {
@@ -35,13 +35,13 @@
   color: $primary-color !important;
 }
 
+.text-primary-light {
+  color: $primary-color-light !important;
+}
+
 a.text-primary:hover,
 a.text-primary:focus {
   color: $primary-color-dark !important;
-}
-
-.text-primary-light {
-  color: $primary-color-light !important;
 }
 
 // Text secondary
@@ -58,7 +58,7 @@ a.text-secondary:focus {
 // Background primary
 
 .bg-primary {
-  background-color: $primary-color-light !important;
+  background-color: $primary-color !important;
 }
 
 //Custom checkbox
