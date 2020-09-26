@@ -8,6 +8,9 @@
     height: 450px;
   }
 
+  #website-logo {
+    height: 3.25rem;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -31,6 +34,10 @@
 
   .sidebar-item {
     position: absolute !important;
+  }
+
+  #website-logo {
+    height: 4.25rem;
   }
 }
 
