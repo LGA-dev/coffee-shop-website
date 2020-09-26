@@ -33,18 +33,13 @@ body {
 }
 
 #navbar {
-  height: 5rem;
-}
-
-#navbar_nonfixed {
-  height: 5rem;
+  height: auto !important;
+  // border: 1px solid red;
 }
 
 #website-logo {
   height: 3rem;
 }
-
-
 
 .navbar-brand {
   font-size: 1.5rem;

@@ -113,6 +113,7 @@ let selectSnacksType = function () {
 
 // Change navbar background color on scroll
 let navigationBar = document.getElementById("navbar");
+let websiteLogo = document.getElementById("website-logo");
 
 function stickyNavbar() {
   window.addEventListener("scroll", () => {
@@ -134,14 +135,10 @@ function stickyNavbar() {
         navigationBar.classList.remove("shadow");
       }
 
-      let websiteLogo = document.getElementById("website-logo");
-
-      // Change navbar size
+      // Change navbar image
       if (fromTop > 0) {
-          document.getElementById("navbar").style.height = "4rem";
           websiteLogo.src = 'img/brew-right-logo-dark.png';
       } else {
-          document.getElementById("navbar").style.height = "5rem";
           websiteLogo.src = 'img/brew-right-logo-light.png';
       }
 
@@ -189,3 +186,14 @@ function paymentRadioCheck() {
     creditCardCVCInput.removeAttribute('disabled');
   }
 }
+
+let togglerButton = document.getElementById("toggler");
+
+togglerButton.addEventListener('click', function() {
+  console.log("test");
+  navigationBar.classList.add("bg-white");
+  navigationBar.classList.remove("bg-transparent");
+  navigationBar.classList.add("navbar-light");
+  navigationBar.classList.remove("navbar-dark");
+  websiteLogo.src = 'img/brew-right-logo-dark.png';
+});
