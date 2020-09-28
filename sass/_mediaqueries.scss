@@ -11,12 +11,20 @@
   #website-logo {
     height: 3.25rem;
   }
+
+  .fa-question-circle {
+    margin-left: 1rem;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .carousel-image {
     height: 500px;
+  }
+  
+  .fa-question-circle {
+    margin-left: 3rem;
   }
 }
 
@@ -38,6 +46,10 @@
 
   #website-logo {
     height: 4.25rem;
+  }
+  
+  .fa-question-circle {
+    margin-left: 1rem;
   }
 }
 

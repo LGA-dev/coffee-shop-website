@@ -1,3 +1,12 @@
+// Popover (This has to be at the top to work)
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+
 // Menu buttons
 let buttonAll = document.getElementById('button-all');
 let buttonDrinks = document.getElementById('button-drinks');
@@ -203,3 +212,4 @@ togglerButton.addEventListener('click', function() {
 $('#datepicker').datepicker({
   uiLibrary: 'bootstrap4'
 });
+

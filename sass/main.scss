@@ -183,5 +183,17 @@ html body.experiment-cta-bar-blue.device-other div.wz-iframe-header {
   font-size: 0.9rem;
 }
 
+.fa-question-circle {
+  margin-left: 3rem;
+}
+
+.popover {
+  max-width: 15rem !important;
+}
+
+.bs-popover-auto[x-placement^="right"], .bs-popover-right {
+  margin-left: 3rem !important;
+}
+
 // Media queries always have to be at the end of style sheet
 @import "mediaqueries";
