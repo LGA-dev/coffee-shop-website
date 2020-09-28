@@ -4,7 +4,6 @@
 @import "animations";
 
 
-
 html {
   scroll-behavior: smooth;
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 300)));
@@ -13,15 +12,17 @@ html {
 }
 
 body {
-  min-height:100%; 
-  position:relative; 
-  padding-bottom: 6rem;
+  min-height: 100%; 
+  position: relative;
+  font-family: $primary-font;
+  font-weight: 300;
+  padding-bottom: 5rem;
 }
 
 #footer { 
   position: absolute; 
   left: 0 ; right: 0; bottom: 0; 
-  height: 6rem;
+  height: 5rem;
 }
 
 .section {
@@ -34,7 +35,6 @@ body {
 
 #navbar {
   height: auto !important;
-  // border: 1px solid red;
 }
 
 #website-logo {
@@ -51,21 +51,32 @@ body {
 }
 
 .hero-heading {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .hero-sub-heading {
   font-size: 1.25rem;
+  font-family: $secondary-font;
 }
 
 .text-shadow {
   text-shadow: 1px 1px 5px black;
 }
 
+h1, .title-font {
+  font-family: $title-font;
+  font-weight: 700;
+}
+
 #hero {
   background-image: url("/img/hero-bg.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.underline-primary {
+  text-decoration: underline;
+  text-decoration-color: $primary-color;
 }
 
 #reservation .container {
@@ -81,7 +92,6 @@ body {
 
 .icon {
   margin-left: 2rem;
-  // margin-bottom: 0.25rem;
 }
 
 .imagecover {
@@ -90,7 +100,6 @@ body {
 
 .carousel-image {
   height: 400px;
-  // border: 10px solid indigo;
 }
 
 .carousel-control-prev,
@@ -120,16 +129,6 @@ html body.experiment-cta-bar-blue.device-other div.wz-iframe-header {
   background: red !important;
 }
 
-
-
-// section {
-//   height: 100vh;
-// }
-
-// .content-section {
-//   min-height: auto;
-// }
-
 .jumbotron {
   height: 10rem;
 }
@@ -138,7 +137,6 @@ html body.experiment-cta-bar-blue.device-other div.wz-iframe-header {
   position: unset;
   height: 100%;
   width: 100%;
-  // border: 10px solid green;
 }
 
 .sidebar-item {
@@ -158,11 +156,6 @@ html body.experiment-cta-bar-blue.device-other div.wz-iframe-header {
 	top: 0;
   padding: 0 15px;
 }
-
-section#orders div.container {
-  // min-height: 50vh;
-}
-
 
 .panel-header {
   cursor: pointer;
@@ -189,5 +182,6 @@ section#orders div.container {
 .text-muted {
   font-size: 0.9rem;
 }
+
 // Media queries always have to be at the end of style sheet
 @import "mediaqueries";

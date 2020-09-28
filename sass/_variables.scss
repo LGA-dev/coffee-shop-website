@@ -1,5 +1,5 @@
 // Colors
-$primary-color: #7aba4e;
+$primary-color: #60c049;
 $primary-color-dark: darken($primary-color, 12.5%);
 $primary-color-light: lighten($primary-color, 12.5%);
 
@@ -12,3 +12,9 @@ $light-gray-color: #fafafa;
 $gray-color: #eaeaea;
 $dark-gray-color: #414141;
 $dark-color: #111111;
+
+// Fonts
+
+$title-font: 'PT Sans Caption', sans-serif;
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Segoe UI', 'Helvetica Neue', Arial;
