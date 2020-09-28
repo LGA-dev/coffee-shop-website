@@ -197,3 +197,9 @@ togglerButton.addEventListener('click', function() {
   navigationBar.classList.remove("navbar-dark");
   websiteLogo.src = 'img/brew-right-logo-dark.png';
 });
+
+
+// Datepicker
+$('#datepicker').datepicker({
+  uiLibrary: 'bootstrap4'
+});
