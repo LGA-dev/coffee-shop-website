@@ -11,12 +11,14 @@
   <title>BrewRight - Coffee Shop</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
   <!-- Date picker -->
-  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body class="text-dark" data-spy="scroll" data-target=".navbar" data-offset="0">
@@ -74,14 +76,14 @@
       <div class="container">
         <div class="row">
           <div class="col vh-100 d-flex flex-column justify-content-end justify-content-sm-center align-items-center text-white text-center pb-5">
-            <h4 class="hero-sub-heading mb-4 text-uppercase">Brewed coffee, Juices, Deserts, Snacks.</h4>
-            <h1 class="hero-heading mb-5 text-decoration-none">Coffee Shop in <u class="underline-primary">Buenos Aires</u></h1>
+            <h4 class="hero-sub-heading mb-4 text-uppercase" data-aos="zoom-in">Brewed coffee, Juices, Deserts, Snacks.</h4>
+            <h1 class="hero-heading mb-5 text-decoration-none" data-aos="zoom-in">Coffee Shop in <u class="underline-primary">Buenos Aires</u></h1>
             <div class="hero-buttons row d-flex p-0 w-50 justify-content-around">
               <div class="col-12 col-sm-6 my-3">
-                <a href="online-order.html" type="button" class="btn btn-primary shadow-none">Order Online</a>
+                <a href="online-order.html" type="button" class="btn btn-primary shadow-none" data-aos="zoom-in">Order Online</a>
               </div>
               <div class="col-12 col-sm-6 my-3">
-                <a href="#reservation" type="button" class="btn btn-secondary shadow-none">Reservation</a>
+                <a href="#reservation" type="button" class="btn btn-secondary shadow-none" data-aos="zoom-in">Reservation</a>
               </div>
             </div>
           </div>
@@ -647,6 +649,7 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/bf3de74a9d.js" crossorigin="anonymous"></script>

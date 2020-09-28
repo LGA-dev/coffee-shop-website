@@ -213,3 +213,6 @@ $('#datepicker').datepicker({
   uiLibrary: 'bootstrap4'
 });
 
+AOS.init({
+  delay: 200,
+});
