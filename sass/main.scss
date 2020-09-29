@@ -1,8 +1,32 @@
+/* 
+======================================================
+00. Global variables & Utility classes
+01. Body
+  02. Header
+    02.a Nav
+  03. Main
+    03.a Hero
+    03.b About
+    03.c Menu
+    03.d Gallery
+    03.e News
+    03.f Reviews
+    03.g Reservation
+    03.h Contact
+    03.i Jumbotron
+    03.j Orders
+      03.j.a Items
+      03.j.b Sidebar
+  04. Footer
+05. Imports 
+====================================================== 
+*/
+
+/* #    00. Global variables & Utility classes    # */
 // @import "test";
 @import "variables";
 @import "custom";
 @import "animations";
-
 
 html {
   scroll-behavior: smooth;
@@ -11,6 +35,52 @@ html {
   overflow-y: scroll;
 }
 
+.btn {
+  width: max-content;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 5px black;
+}
+
+h1, .title-font {
+  font-family: $title-font;
+  font-weight: 700;
+}
+
+.underline-primary {
+  text-decoration: underline $primary-color 2px;
+  text-underline-position: under;
+}
+
+.sidebar-section {
+  position: unset;
+  height: 100%;
+  width: 100%;
+}
+
+// Change name
+.icon {
+  margin-left: 2rem;
+}
+
+.imagecover {
+  object-fit: cover;
+}
+
+.price {
+  font-size: 1.5rem;
+  text-decoration: dotted underline $primary-color 2px;
+  text-underline-position: under;
+}
+
+.text-muted {
+  font-size: 0.9rem;
+}
+
+
+
+/* #    01. Body    # */
 body {
   min-height: 100%; 
   position: relative;
@@ -19,20 +89,9 @@ body {
   padding-bottom: 5rem;
 }
 
-#footer { 
-  position: absolute; 
-  left: 0 ; right: 0; bottom: 0; 
-  height: 5rem;
-}
 
-.section {
-  height: 100%;
-}
-
-.btn {
-  width: max-content;
-}
-
+/* #    02. Header    # */
+/* ##    02.a Nav    ## */
 #navbar {
   height: auto !important;
 }
@@ -45,9 +104,15 @@ body {
   font-size: 1.5rem;
 }
 
-.profile-pic {
-  width: 100px;
-  height: 100px;
+
+
+/* #    03. Main    # */
+
+/* ##    03.a Hero    ## */
+#hero {
+  background-image: url("/img/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-heading {
@@ -59,45 +124,13 @@ body {
   font-family: $secondary-font;
 }
 
-.text-shadow {
-  text-shadow: 1px 1px 5px black;
+main u.underline-primary {
+  text-decoration-style: double;
+  text-underline-position: unset;
 }
 
-h1, .title-font {
-  font-family: $title-font;
-  font-weight: 700;
-}
 
-#hero {
-  background-image: url("/img/hero-bg.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.underline-primary {
-  text-decoration: underline;
-  text-decoration-color: $primary-color;
-}
-
-#reservation .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#map.col-12 {
-  height: 500px;
-  width: 50vw;
-}
-
-.icon {
-  margin-left: 2rem;
-}
-
-.imagecover {
-  object-fit: cover;
-}
-
+/* ##    03.d Gallery    ## */
 .carousel-image {
   height: 400px;
 }
@@ -121,42 +154,40 @@ h1, .title-font {
   );
 }
 
-.wz-iframe-header {
-  background: #368532;
+
+/* ##    03.f Reviews    ## */
+.profile-pic {
+  width: 100px;
+  height: 100px;
 }
 
-html body.experiment-cta-bar-blue.device-other div.wz-iframe-header {
-  background: red !important;
+
+/* ##    03.g Reservation    ## */
+#reservation .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+
+/* ##    03.h Contact    ## */
+#map.col-12 {
+  height: 500px;
+  width: 50vw;
+}
+
+
+/* ##    03.i Jumbotron    ## */
 .jumbotron {
   height: 10rem;
 }
 
-.sidebar-section {
-  position: unset;
-  height: 100%;
-  width: 100%;
-}
 
-.sidebar-item {
-  // background-color: salmon;
-  position: unset;
-	top: 0;
-	left: 0;
-	width: 100%;
-  height: 100%;
-}
 
-.make-me-sticky {
-  // background-color: skyblue;
-  // border: 2px solid black;
-  position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-  padding: 0 15px;
-}
+/* ##    03.j Orders    ## */
 
+
+/* ##    03.j.a Items    ## */
 .panel-header {
   cursor: pointer;
 
@@ -175,26 +206,44 @@ html body.experiment-cta-bar-blue.device-other div.wz-iframe-header {
   max-width: 75px;
 }
 
-.price {
-  font-size: 1.5rem;
-}
-
-.text-muted {
-  font-size: 0.9rem;
+.cc-cvc {
+  display: flex;
+  justify-content: space-between;
 }
 
 .popover {
   max-width: 15rem !important;
 }
 
-.cc-cvc {
-  display: flex;
-  justify-content: space-between;
-  // border: 1px solid red;
-}
-
 .fa-question-circle:hover {
   color: $primary-color;
+}
+
+
+/* ##    03.j.b Sidebar    ## */
+.sidebar-item {
+  position: unset;
+	top: 0;
+	left: 0;
+	width: 100%;
+  height: 100%;
+}
+
+.make-me-sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  padding: 0 15px;
+}
+
+
+
+
+/* #    04. Footer    # */
+#footer { 
+  position: absolute; 
+  left: 0 ; right: 0; bottom: 0; 
+  height: 5rem;
 }
 
 // Media queries always have to be at the end of style sheet

@@ -1,15 +1,11 @@
-
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  
-  .carousel-image {
-    height: 450px;
-  }
-
+@media (min-width: 576px) {
   #website-logo {
     height: 3.25rem;
+  }
+
+  .carousel-image {
+    height: 450px;
   }
 }
 
@@ -22,26 +18,19 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  #website-logo {
+    height: 4.25rem;
+  }
+
   .carousel-image {
     height: 600px;
   }
 
-  // Why this doesn't work unless I set it to important
   .sidebar-section {
     position: absolute !important;
-    // border: 10px solid yellow;
   }
 
   .sidebar-item {
     position: absolute !important;
   }
-
-  #website-logo {
-    height: 4.25rem;
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
 }

@@ -2,32 +2,34 @@
 .btn-primary {
   background-color: $primary-color !important;
   border-color: $primary-color !important;
-}
 
-.btn-primary:hover {
-  background-color: $primary-color-dark !important;
-  border-color: $primary-color !important;
-}
+  &:hover {
+    background-color: $primary-color-dark !important;
+    border-color: $primary-color !important;
+  }
 
-.btn-primary:active {
-  background-color: $primary-color-light !important;
-  border-color: $primary-color-light !important;
+  &:active {
+    background-color: $primary-color-light !important;
+    border-color: $primary-color-light !important;
+    color: $dark-color !important;
+  }
 }
 
 // Button secondary
 .btn-secondary {
-  background-color: $secondary-color-light !important;
-  border-color: $secondary-color-light !important;
-}
-
-.btn-secondary:hover {
-  background-color: $secondary-color-dark !important;
+  background-color: $secondary-color !important;
   border-color: $secondary-color !important;
-}
 
-.btn-secondary:active {
-  background-color: $secondary-color-light !important;
-  border-color: $secondary-color-light !important;
+  &:hover {
+    background-color: $secondary-color-dark !important;
+    border-color: $secondary-color !important;
+  }
+
+  &:active {
+    background-color: $secondary-color-light !important;
+    border-color: $secondary-color-light !important;
+    color: $dark-color !important;
+  }
 }
 
 // Text primary
@@ -39,6 +41,7 @@
   color: $primary-color-light !important;
 }
 
+// For order online navbar item
 a.text-primary:hover,
 a.text-primary:focus {
   color: $primary-color-light !important;
@@ -50,6 +53,7 @@ a.text-primary:focus {
   color: $secondary-color !important;
 }
 
+// For footer arrow
 a.text-secondary:hover,
 a.text-secondary:focus {
   color: $secondary-color-dark !important;
@@ -57,49 +61,51 @@ a.text-secondary:focus {
 }
 
 // Background primary
-
 .bg-primary {
   background-color: $primary-color !important;
 }
 
-// Border
-
+// Border primary
 .border-primary {
   border-color: $primary-color-light !important;
 }
 
-//Custom checkbox
+// Custom checkbox color
 
-.custom-control-input:focus~.custom-control-label::before {
-  border-color: $primary-color !important;
-  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+.custom-control-input {
+  &:focus~.custom-control-label::before {
+    border-color: $primary-color !important;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+  }
+
+  &:checked~.custom-control-label::before {
+    border-color: $primary-color !important;
+    background-color: $primary-color !important;
+  }
+
+  &:focus:not(:checked)~.custom-control-label::before {
+    border-color: $primary-color-light !important;
+  }
+
+  &:not(:disabled):active~.custom-control-label::before {
+    background-color: #d6f5dd !important;
+    border-color: #d6f5dd !important;
+  }
 }
 
-.custom-control-input:checked~.custom-control-label::before {
-  border-color: $primary-color !important;
-  background-color: $primary-color !important;
-}
-
-.custom-control-input:focus:not(:checked)~.custom-control-label::before {
-  border-color: $primary-color-light !important;
-}
-
-.custom-control-input:not(:disabled):active~.custom-control-label::before {
-  background-color: #d6f5dd !important;
-  border-color: #d6f5dd !important;
-}
-
-// Custom radio
+// Custom radio pointer
 .custom-radio,
 .custom-control-label {
   cursor: pointer;
 }
 
+// Custom color on form input focus
 .form-control:focus {
   border-color: $primary-color-light;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(142, 255, 160, 0.6);
 }
 
+// Custom color for Date picker icon
 .gj-datepicker-bootstrap [role=right-icon] button .gj-icon,
 .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
   top:13px !important; 

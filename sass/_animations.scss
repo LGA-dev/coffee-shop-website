@@ -1,17 +1,13 @@
+
+// Fade in and Fade out animations
 .fadeIn {
   display: block;
   animation: fade-in 1s ease;
-  // color: blue !important;
 }
 
 .fadeOut {
   display: none;
   animation: fade-out 1s ease;
-  // color: violet !important;
-}
-
-.navbar-transition {
-  transition: all 0.5s ease;
 }
 
 @keyframes fade-in {
@@ -34,4 +30,10 @@
     opacity: 0;
     display: none;
   }
+}
+
+
+// Navbar transition animation
+.navbar-transition {
+  transition: all 0.5s ease;
 }
