@@ -1,4 +1,4 @@
-# Online Learning Website
+# Coffee Shop Website
 
 ## Table of contents
 
@@ -17,7 +17,7 @@ The site was written from scratch and the design was taken from [this template](
 
 ## Screenshot
 
-![Example screenshot](./img/website-screenshot.jpg)
+![Example screenshot](./img/coffee-shop-website.jpg)
 
 ## Technologies
 
