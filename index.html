@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Coffee shop website">
-  <meta name="author" content="lga-dev">
+  <meta name="author" content="Luciano Alcaraz">
+  <meta name="description" content="A demo website for online learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="OnlineSchool">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vibrant-knuth-615579.netlify.app/">
 
   <title>BrewRight - Coffee Shop</title>
 
@@ -78,8 +81,8 @@
         <!-- Section content -->
         <div class="row">
           <div class="col vh-100 d-flex flex-column justify-content-end justify-content-sm-center align-items-center text-white text-center pb-5">
-            <h4 class="hero-sub-heading mb-4 text-uppercase" data-aos="zoom-in">Brewed coffee, Juices, Deserts, Snacks.</h4>
-            <h1 class="hero-heading mb-5 text-decoration-none" data-aos="zoom-in">Coffee Shop in <u class="underline-primary">Buenos Aires</u></h1>
+            <h4 class="hero-sub-heading mb-4 text-uppercase" data-aos="zoom-in">Brewed coffee, Juices, Desserts, Snacks.</h4>
+            <h1 class="hero-heading mb-5 text-decoration-none" data-aos="zoom-in">Coffee Shop in Buenos Aires</h1>
             <div class="hero-buttons row d-flex p-0 w-50 justify-content-around">
               <div class="col-12 col-sm-6 my-3">
                 <a href="online-order.html" type="button" class="btn btn-primary shadow-none" data-aos="zoom-in">Order Online</a>
@@ -143,11 +146,19 @@
         <h1 class="text-center my-5 font-weight-bold underline-primary">Our menu</h1>
         <!-- Section buttons -->
         <div class="d-flex justify-content-center">
-          <div class="btn-group my-3">
-            <button id="button-all" class="btn btn-secondary shadow-none px-4" onclick="selectTypeAll()">All</button>
-            <button id="button-drinks" class="btn btn-secondary shadow-none px-4 disabled" onclick="selectDrinksType()">Drinks</button>
-            <button id="button-deserts" class="btn btn-secondary shadow-none px-4 disabled" onclick="selectDesertsType()">Deserts</button>
-            <button id="button-snacks" class="btn btn-secondary shadow-none px-4 disabled" onclick="selectSnacksType()">Snacks</button>
+          <div class="btn-group btn-group-toggle my-3" data-toggle="buttons">
+            <label class="btn btn-secondary btn-menu active">
+              <input type="radio" name="options" id="all-types-button" checked> All types
+            </label>
+            <label class="btn btn-secondary btn-menu">
+              <input type="radio" name="options" id="drinks-button"> Drinks
+            </label>
+            <label class="btn btn-secondary btn-menu">
+              <input type="radio" name="options" id="snacks-button"> Snacks
+            </label>
+            <label class="btn btn-secondary btn-menu">
+              <input type="radio" name="options" id="desserts-button"> Desserts
+            </label>
           </div>
         </div>
         <!-- Section grid -->
@@ -243,7 +254,7 @@
             </div>
           </div>
           <!-- Churros Card -->
-          <div class="col-12 col-md-6 my-2 deserts">
+          <div class="col-12 col-md-6 my-2 desserts">
             <div class="card h-100">
               <div class="row no-gutters h-100">
                 <div class="col-4">
@@ -261,7 +272,7 @@
             </div>
           </div>
           <!-- Donuts Card -->
-          <div class="col-12 col-md-6 my-2 deserts">
+          <div class="col-12 col-md-6 my-2 desserts">
             <div class="card h-100">
               <div class="row no-gutters h-100">
                 <div class="col-4">
@@ -279,7 +290,7 @@
             </div>
           </div>
           <!-- Cupcakes Card -->
-          <div class="col-12 col-md-6 my-2 deserts">
+          <div class="col-12 col-md-6 my-2 desserts">
             <div class="card h-100">
               <div class="row no-gutters h-100">
                 <div class="col-4">

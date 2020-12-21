@@ -5,11 +5,6 @@
   animation: fade-in 1s ease;
 }
 
-.fadeOut {
-  display: none;
-  animation: fade-out 1s ease;
-}
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -20,18 +15,6 @@
     display: block;
   }
 }
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-    display: block;
-  }
-  to {
-    opacity: 0;
-    display: none;
-  }
-}
-
 
 // Navbar transition animation
 .navbar-transition {
