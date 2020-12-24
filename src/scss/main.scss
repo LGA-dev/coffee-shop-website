@@ -1,0 +1,158 @@
+/* 
+======================================================
+00. Imports
+01. Global variables & Utility classes
+02. Header
+03. Main
+  03.a Hero
+  03.b About
+  03.c Menu
+  03.d Gallery
+  03.e News
+  03.f Reviews
+  03.g Reservation
+  03.h Contact
+  03.i Jumbotron
+  03.j Orders
+    03.j.a Items
+    03.j.b Sidebar
+04. Footer
+====================================================== 
+*/
+
+
+/* #    00. Imports    # */
+@import "variables";
+@import "custom";
+@import "animations";
+// @import "test";
+@import "../../vendor/bootstrap/scss/bootstrap"; // Include all of Bootstrap
+
+
+/* #    01. Global variables & Utility classes    # */
+html {
+  scroll-behavior: smooth;
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 300)));
+  overflow-y: scroll;
+}
+
+body {
+  position: relative;
+  font-family: $primary-font;
+  font-weight: 300;
+  padding-bottom: 5rem;
+}
+
+h1, .title-font, .card-title {
+  font-family: $title-font;
+  margin: 0;
+}
+
+// Underline classes
+.underline-primary {
+  text-decoration: underline $primary-color 2px;
+  text-underline-offset: 20%;
+}
+
+.underline-secondary {
+  text-decoration: underline white 2px;
+  text-underline-offset: 20%;
+}
+
+// Shadow for carousel text
+.text-shadow {
+  text-shadow: 1px 1px 5px black;
+}
+
+// Price tags for menu item cards
+.price {
+  text-decoration: underline white 1px;
+  text-underline-offset: 20%;
+  text-decoration-style: dotted;
+  background-color: $secondary-color;
+  color: white;
+  margin: 0;
+}
+
+// Custom carousel width
+.carousel {
+  max-width:900px;
+  max-height:600px;
+}
+
+// Custom muted text
+.text-muted {
+  font-size: 0.9rem;
+  color: white !important;
+}
+
+// Custom footer icons margin
+.footer-icon {
+  margin-left: 2rem;
+}
+
+// Custom background for news section images
+.dark-gradient-background {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.695098107602416) 12%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+
+/* #    02. Header    # */
+
+
+/* #    03. Main    # */
+/* ##    03.a Hero    ## */
+#hero {
+  background-image: url("/src/assets/images/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-heading {
+  font-size: 3.5rem;
+}
+
+.hero-sub-heading {
+  font-size: 1.25rem;
+  font-family: $secondary-font;
+}
+
+
+/* ##    03.d Gallery    ## */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+
+  &-icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+
+/* ##    03.f Reviews    ## */
+.profile-pic {
+  width: 100px;
+  height: 100px;
+}
+
+/* ##    03.b About    ## */
+/* ##    03.c Menu    ## */
+/* ##    03.e News    ## */
+/* ##    03.g Reservation    ## */
+/* ##    03.h Contact    ## */
+
+
+/* #    04. Footer    # */
+#footer { 
+  position: absolute; 
+  left: 0 ; right: 0; bottom: 0; 
+  height: 5rem;
+}
+
+@import "mediaqueries";

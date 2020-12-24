@@ -1,0 +1,83 @@
+// Modify the default map
+$theme-colors: (
+  // "primary": #60c049,
+  "primary": #7aba4e,
+  "secondary": #ba4e79,
+  "success": #72d677,
+  "info": #00aedb,
+  "warning": #ffc785,
+  "danger": #df7575,
+  "purple": #b19cd9,
+  "light": #fff,
+  "dark": #222
+);
+
+// Create your own map
+$custom-colors: (
+  "light-gray": #f1f1f1,
+  "gray": #eaeaea,
+  "dark-gray": #414141
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+// Modify bootstrap utility class
+.btn {
+  border-radius: 0!important;
+}
+
+
+// Old code
+
+
+// Change color of text on hover
+a.text-primary:hover,
+a.text-primary:focus {
+  color: $secondary-color-light !important;
+  text-decoration: underline;
+}
+
+// Custom checkbox color
+
+.custom-control-input {
+  &:focus~.custom-control-label::before {
+    border-color: $primary-color !important;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+  }
+
+  &:checked~.custom-control-label::before {
+    border-color: $primary-color !important;
+    background-color: $primary-color !important;
+  }
+
+  &:focus:not(:checked)~.custom-control-label::before {
+    border-color: $primary-color-light !important;
+  }
+
+  &:not(:disabled):active~.custom-control-label::before {
+    background-color: #d6f5dd !important;
+    border-color: #d6f5dd !important;
+  }
+}
+
+// Custom radio pointer
+.custom-radio,
+.custom-control-label {
+  cursor: pointer;
+}
+
+// Custom color on form input focus
+.form-control:focus {
+  border-color: $primary-color-light;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(142, 255, 160, 0.6);
+}
+
+// Custom color for Date picker icon
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon,
+.gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+  top:13px !important; 
+  left:8px !important;
+  color: $primary-color;
+}

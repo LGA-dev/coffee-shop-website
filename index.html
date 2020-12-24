@@ -11,72 +11,57 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vibrant-knuth-615579.netlify.app/">
 
+  <!-- Page's title -->
   <title>BrewRight - Coffee Shop</title>
 
+  <!-- Site icon file -->
+  <link rel="icon" href="favicon.png" />
+  <!-- FontAwesome css file -->
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Date picker CSS-->
   <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
-  <!-- Main CS File -->
-  <link rel="stylesheet" href="/css/main.css">
+  <!-- Main css file (Contains Bootstrap) -->
+  <link rel="stylesheet" href="src/css/main.css">
 </head>
 
-<body class="text-dark" data-spy="scroll" data-target=".navbar" data-offset="0">
-
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
   <!-- Header section -->
-  <header id="header">
-      <!-- Navigation bar -->
-      <nav class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top py-lg-0" id="navbar">
-        <div class="container">
-          <!-- Logo -->
-          <a class="navbar-brand p-0 m-0" href="index.html">
-            <img src="/img/brew-right-logo-light.png" id="website-logo" alt="Website Logo">
-          </a>
-          <!-- Toggler button -->
-          <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Content to toggle -->
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto"> <!-- ml-auto aligns the unordered list items to the right -->
-              <li class="nav-item">
-                <a class="nav-link" href="#hero" >Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#menu">Our Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#gallery">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#news">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#reservation">Reservation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="online-order.html">Order online</a>
-              </li>
-            </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top" id="nav">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand p-0 m-0" href="index.html">
+          <img src="src/assets/images/brew-right-logo-light.png" id="website-logo" alt="Website Logo">
+        </a>
+        <!-- Toggle button -->
+        <button id="toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#menu">Our Menu</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#news">News</a>
+            <a class="nav-link" href="#reviews">Reviews</a>
+            <a class="nav-link" href="#reservation">Reservation</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
   </header>
 
   <!-- Main section -->
   <main id="main">
     <!-- Hero section -->
-    <section id="hero" class="section text-danger">
+    <section id="hero" class="section">
       <div class="container">
         <!-- Section content -->
         <div class="row">
@@ -99,39 +84,19 @@
     <section id="about" class="section py-5">
       <div class="container my-5">
         <!-- Section title -->
-        <h1 class="text-center my-5 font-weight-bold underline-primary">About us</h1>
+        <h1 class="text-center my-5"><u class="underline-primary">About us</u></h1>
         <!-- Section content -->
         <div class="row">
+          <!-- Image column -->
           <div class="col-12 col-lg-6">
-            <div id="carouselSlide" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselSlide" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselSlide" data-slide-to="1"></li>
-                <li data-target="#carouselSlide" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/img/about-1.jpg" class="img-fluid d-block w-100" alt="Responsive image">
-                </div>
-                <div class="carousel-item">
-                  <img src="/img/about-2.jpg" class="img-fluid d-block w-100" alt="Responsive image">
-                </div>
-                <div class="carousel-item">
-                  <img src="/img/about-3.jpg" class="img-fluid d-block w-100" alt="Responsive image">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselSlide" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselSlide" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+            <img src="src/assets/images/about-2.jpg" class="img-fluid d-block w-100" alt="Responsive image">
           </div>
-          <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center text-justify align-items-lg-start text-lg-left pt-5 pl-3 pl-lg-5 pt-lg-0">
-            <h1 class="font-weight-bold mb-4">Brew<u class="text-primary">Right</u></h1>
+          <!-- Text column -->
+          <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center text-justify align-items-lg-start text-lg-left ps-5">
+            <h1 class="mb-4">Brew<u class="text-primary">Right</u></h1>
+            <p>
+              This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
+            </p>
             <p>
               This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
             </p>
@@ -140,169 +105,201 @@
       </div>
     </section>
     <!-- Menu section -->
-    <section id="menu" class="section py-5 bg-light">
-      <div class="container">
+    <section id="menu" class="section py-5 bg-primary">
+      <div class="container d-flex flex-column">
         <!-- Section title -->
-        <h1 class="text-center my-5 font-weight-bold underline-primary">Our menu</h1>
+        <h1 class="text-center my-5 text-light"><u class="underline-secondary">Our menu</u></h1>
         <!-- Section buttons -->
-        <div class="d-flex justify-content-center">
-          <div class="btn-group btn-group-toggle my-3" data-toggle="buttons">
-            <label class="btn btn-secondary btn-menu active">
-              <input type="radio" name="options" id="all-types-button" checked> All types
-            </label>
-            <label class="btn btn-secondary btn-menu">
-              <input type="radio" name="options" id="drinks-button"> Drinks
-            </label>
-            <label class="btn btn-secondary btn-menu">
-              <input type="radio" name="options" id="snacks-button"> Snacks
-            </label>
-            <label class="btn btn-secondary btn-menu">
-              <input type="radio" name="options" id="desserts-button"> Desserts
-            </label>
-          </div>
+        <div class="btn-group align-self-center" role="group" aria-label="Menu types toggle button group">
+          <input type="radio" class="btn-check" name="btn-radio-options" id="btn-radio-all" autocomplete="off" checked>
+          <label id="all-types-button" class="btn btn-secondary" for="btn-radio-all">All types</label>
+        
+          <input type="radio" class="btn-check" name="btn-radio-options" id="btn-radio-drinks" autocomplete="off">
+          <label id="drinks-button" class="btn btn-secondary" for="btn-radio-drinks">Drinks</label>
+        
+          <input type="radio" class="btn-check" name="btn-radio-options" id="btn-radio-snacks" autocomplete="off">
+          <label id="snacks-button" class="btn btn-secondary" for="btn-radio-snacks">Snacks</label>
+        
+          <input type="radio" class="btn-check" name="btn-radio-options" id="btn-radio-desserts" autocomplete="off">
+          <label id="desserts-button" class="btn btn-secondary" for="btn-radio-desserts">Desserts</label>
         </div>
         <!-- Section grid -->
         <div class="row row-cols-2">
-          <!-- Coffee Card -->
+          <!-- Coffee card column -->
           <div class="col-12 col-md-6 my-2 drinks">
-            <div class="card h-100">
-              <div class="row no-gutters h-100">
-                <div class="col-4">
-                  <img src="/img/menu-hot-drink.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
+            <!-- Card container -->
+            <div class="card">
+              <div class="row g-0">
+                <!-- Image column -->
+                <div class="col-4 p-2">
+                  <img src="/src/assets/images/menu-hot-drink.jpg" class="img-fluid" alt="Coffee image">
                 </div>
-                <div class="col-8 p-3  d-flex flex-column justify-content-between align-items-left">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="title-font">Brewed Coffee</h3>
-                    <div class="price  underline-primary">$200</div>
+                <!-- Text column -->
+                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="card-title"><u class="underline-primary">Brewed Coffee</u></h3>
+                    <h4 class="price p-1">$200</h4>
                   </div>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
-                  <button class="btn btn-primary shadow-none">Purchase</button>
+                  <p class="card-text">Lorem adipisci perferendis?</p>
+                  <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Crepes Card -->
-          <div class="col-12 col-md-6 my-2 snacks">
-            <div class="card h-100">
-              <div class="row no-gutters h-100">
-                <div class="col-4">
-                  <img src="/img/menu-crepes.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
+
+          <!-- Crepes card column -->
+          <div class="col-12 col-md-6 my-2 desserts">
+            <!-- Card container -->
+            <div class="card">
+              <div class="row g-0">
+                <!-- Image column -->
+                <div class="col-4 p-2">
+                  <img src="/src/assets/images/menu-crepes.jpg" class="img-fluid" alt="Crepes image">
                 </div>
-                <div class="col-8 p-3 d-flex flex-column justify-content-between align-items-left">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="title-font">Crepes</h3>
-                    <div class="price underline-primary">$25</div>
+                <!-- Text column -->
+                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="card-title"><u class="underline-primary">Crepes</u></h3>
+                    <h4 class="price p-1">$25</h4>
                   </div>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione?</p>
-                  <button class="btn btn-primary shadow-none">Purchase</button>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
+                  <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Juices Card -->
+
+          <!-- Juices card column -->
           <div class="col-12 col-md-6 my-2 drinks">
-            <div class="card h-100">
-              <div class="row no-gutters h-100">
-                <div class="col-4">
-                  <img src="/img/menu-cold-drink.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
+            <!-- Card container -->
+            <div class="card">
+              <div class="row g-0">
+                <!-- Image column -->
+                <div class="col-4 p-2">
+                  <img src="/src/assets/images/menu-cold-drink.jpg" class="img-fluid" alt="Juices image">
                 </div>
-                <div class="col-8 p-3 d-flex flex-column justify-content-between align-items-left">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="title-font">Orange Juice</h3>
-                    <div class="price underline-primary">$100</div>
+                <!-- Text column -->
+                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="card-title"><u class="underline-primary">Orange Juice</u></h3>
+                    <h4 class="price p-1">$100</h4>
                   </div>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at ducimus placeat aut!</p>
-                  <button class="btn btn-primary shadow-none">Purchase</button>
+                  <p class="card-text">Lorem adipisci perferendis?</p>
+                  <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Pizza Card -->
+
+          <!-- Pizza column -->
           <div class="col-12 col-md-6 my-2 snacks">
-            <div class="card h-100">
-              <div class="row no-gutters h-100">
-                <div class="col-4">
-                  <img src="/img/menu-pizza.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
+            <!-- Card container -->
+            <div class="card">
+              <div class="row g-0">
+                <!-- Image column -->
+                <div class="col-4 p-2">
+                  <img src="/src/assets/images/menu-pizza.jpg" class="img-fluid" alt="Pizza image">
                 </div>
-                <div class="col-8 p-3 d-flex flex-column justify-content-between align-items-left">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="title-font">Pizza</h3>
-                    <div class="price underline-primary">$50</div>
+                <!-- Text column -->
+                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="card-title"><u class="underline-primary">Pizza</u></h3>
+                    <h4 class="price p-1">$150</h4>
                   </div>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vel!</p>
-                  <button class="btn btn-primary shadow-none">Purchase</button>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
+                  <p class="card-text">Lorem adipisci perferendis?</p>
+                  <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Sandwiches Card -->
+
+          <!-- Sandwiches column -->
           <div class="col-12 col-md-6 my-2 snacks">
-            <div class="card h-100">
-              <div class="row no-gutters h-100">
-                <div class="col-4">
-                  <img src="/img/menu-sandwiches.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
+            <!-- Card container -->
+            <div class="card">
+              <div class="row g-0">
+                <!-- Image column -->
+                <div class="col-4 p-2">
+                  <img src="/src/assets/images/menu-sandwiches.jpg" class="img-fluid" alt="Sandwiches image">
                 </div>
-                <div class="col-8 p-3 d-flex flex-column justify-content-between align-items-left">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="title-font">Sandwiches</h3>
-                    <div class="price underline-primary">$35</div>
+                <!-- Text column -->
+                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="card-title"><u class="underline-primary">Sandiwches</u></h3>
+                    <h4 class="price p-1">$5</h4>
                   </div>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                  <button class="btn btn-primary shadow-none">Purchase</button>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
+                  <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Churros Card -->
+
+          <!-- Churros column -->
           <div class="col-12 col-md-6 my-2 desserts">
-            <div class="card h-100">
-              <div class="row no-gutters h-100">
-                <div class="col-4">
-                  <img src="/img/menu-churros.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
+            <!-- Card container -->
+            <div class="card">
+              <div class="row g-0">
+                <!-- Image column -->
+                <div class="col-4 p-2">
+                  <img src="/src/assets/images/menu-churros.jpg" class="img-fluid" alt="Churros image">
                 </div>
-                <div class="col-8 p-3 d-flex flex-column justify-content-between align-items-left">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="title-font">Churros</h3>
-                    <div class="price underline-primary">$110</div>
+                <!-- Text column -->
+                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="card-title"><u class="underline-primary">Churros</u></h3>
+                    <h4 class="price p-1">$40</h4>
                   </div>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
-                  <button class="btn btn-primary shadow-none">Purchase</button>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
+                  <p class="card-text">Lorem adipisci perferendis?</p>
+                  <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Donuts Card -->
+
+          <!-- Donuts column -->
           <div class="col-12 col-md-6 my-2 desserts">
-            <div class="card h-100">
-              <div class="row no-gutters h-100">
-                <div class="col-4">
-                  <img src="/img/menu-donuts.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
+            <!-- Card container -->
+            <div class="card">
+              <div class="row g-0">
+                <!-- Image column -->
+                <div class="col-4 p-2">
+                  <img src="/src/assets/images/menu-donuts.jpg" class="img-fluid" alt="Donuts image">
                 </div>
-                <div class="col-8 p-3 d-flex flex-column justify-content-between align-items-left">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="title-font">Donuts</h3>
-                    <div class="price underline-primary">$90</div>
+                <!-- Text column -->
+                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="card-title"><u class="underline-primary">Donuts</u></h3>
+                    <h4 class="price p-1">$75</h4>
                   </div>
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi cum, at itaque cupiditate minus.</p>
-                  <button class="btn btn-primary shadow-none">Purchase</button>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
+                  <p class="card-text">Lorem adipisci perferendis?</p>
+                  <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Cupcakes Card -->
+
+          <!-- Cupcakes column -->
           <div class="col-12 col-md-6 my-2 desserts">
-            <div class="card h-100">
-              <div class="row no-gutters h-100">
-                <div class="col-4">
-                  <img src="/img/menu-cupcakes.jpg" class="img-fluid h-100 imagecover rounded-left" alt="Responsive image">
+            <!-- Card container -->
+            <div class="card">
+              <div class="row g-0">
+                <!-- Image column -->
+                <div class="col-4 p-2">
+                  <img src="/src/assets/images/menu-cupcakes.jpg" class="img-fluid" alt="Cupcakes image">
                 </div>
-                <div class="col-8 p-3 d-flex flex-column justify-content-between align-items-left">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="title-font">Cupcakes</h3>
-                    <div class="price underline-primary">$175</div>
+                <!-- Text column -->
+                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="card-title"><u class="underline-primary">Cupcakes</u></h3>
+                    <h4 class="price p-1">$155</h4>
                   </div>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum.</p>
-                  <button class="btn btn-primary shadow-none">Purchase</button>
+                  <p class="card-text">Lorem adipisci perferendis?</p>
+                  <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
             </div>
@@ -312,84 +309,84 @@
     </section>
     <!-- Gallery section -->
     <section id="gallery" class="section py-5">
-      <div class="container">
+      <div class="container d-flex flex-column align-items-center">
         <!-- Section title -->
-        <h1 class="text-center my-5 font-weight-bold underline-primary">Gallery</h1>
-        <!-- Carousel section -->
-        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        <h1 class="text-center my-5 underline-primary">Gallery</h1>
+        <!-- New carousel section -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselIndicators" data-slide-to="3"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100 carousel-image imagecover" src="/img/gallery-1.jpg" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text-shadow">First</h2>
-                <p class="text-shadow">Lorem ipsum dolor sit amet consectetur.</p>
+              <img src="/src/assets/images/gallery-1.jpg" class="img-fluid w-100" alt="Gallery image">
+              <div class="carousel-caption d-none d-md-block text-shadow">
+                <h1>First slide</h1>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100 carousel-image imagecover" src="/img/gallery-2.jpg" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text-shadow">Second</h2>
-                <p class="text-shadow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur.</p>
+              <img src="/src/assets/images/gallery-2.jpg" class="img-fluid w-100" alt="Gallery image">
+              <div class="carousel-caption d-none d-md-block text-shadow">
+                <h1>Second slide</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100 carousel-image imagecover" src="/img/gallery-3.jpg" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text-shadow">Third</h2>
-                <p class="text-shadow">Lorem ipsum dolor sit.</p>
+              <img src="/src/assets/images/gallery-3.jpg" class="img-fluid w-100" alt="Gallery image">
+              <div class="carousel-caption d-none d-md-block text-shadow">
+                <h1>Third slide</h1>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100 carousel-image imagecover" src="/img/gallery-4.jpg" alt="Fourth slide">
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text-shadow">Fourth</h2>
-                <p class="text-shadow">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <img src="/src/assets/images/gallery-4.jpg" class="img-fluid w-100" alt="Gallery image">
+              <div class="carousel-caption d-none d-md-block text-shadow">
+                <h1>Fourth slide</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem.</p>
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="visually-hidden">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="visually-hidden">Next</span>
           </a>
         </div>
       </div>
     </section>
     <!-- News section -->
-    <section id="news" class="section py-5 bg-light">
+    <section id="news" class="section py-5 bg-primary">
       <div class="container">
         <!-- Section title -->
-        <h1 class="text-center my-5 font-weight-bold underline-primary">News and Events</h1>
+        <h1 class="text-center my-5 text-light"><u class="underline-secondary">News and Events</u></h1>
         <!-- Section content -->
         <div class="row">
           <!-- Event card -->
           <div class="col-12 col-lg-6 my-3">
             <div class="card text-white border-0">
-              <img class="card-img imagecover" src="/img/event.jpg" alt="">
-              <div class="card-img-overlay d-flex flex-column justify-content-end gradientbackground">
-                <h6 class="card-subtitle mb-2 text-primary-light"><u>Event</u></h6>
+              <img class="card-img" src="/src/assets/images/event.jpg" alt="">
+              <div class="card-img-overlay d-flex flex-column justify-content-end dark-gradient-background">
+                <h6 class="card-subtitle mb-2"><u class="text-danger">Event</u></h6>
                 <h2 class="card-title">Rock Live Concert</h2>
-                <p class="card-text">October 3, 2020</p>
+                <p class="card-text">December 23, 2020</p>
               </div>
             </div>
           </div>
           <!-- News card -->
           <div class="col-12 col-lg-6 my-3">
             <div class="card text-white border-0">
-              <img class="card-img imagecover" src="/img/news.jpg" alt="">
-              <div class="card-img-overlay d-flex flex-column justify-content-end gradientbackground">
-                <h6 class="card-subtitle mb-2 text-primary-light"><u>News</u></h6>
+              <img class="card-img" src="/src/assets/images/news.jpg" alt="">
+              <div class="card-img-overlay d-flex flex-column justify-content-end dark-gradient-background">
+                <h6 class="card-subtitle mb-2"><u class="text-info">News</u></h6>
                 <h2 class="card-title">Greece month</h2>
-                <p class="card-text">October 14, 2020</p>
+                <p class="card-text">December 31, 2020</p>
               </div>
             </div>
           </div>
@@ -399,102 +396,120 @@
     <section id="reviews" class="section py-5">
       <div class="container">
         <!-- Section title -->
-        <h1 class="text-center my-5 font-weight-bold underline-primary">Lastest reviews</h1>
+        <h1 class="text-center my-5 underline-primary">Lastest reviews</h1>
         <!-- Section content -->
-        <div class="card-deck row">
-          <div class="card bg-light px-4 py-2">
-            <div class="row d-flex p-2 flex-column justify-content-center align-items-center flex-lg-row justify-content-lg-center align-items-lg-left">
-                <div class="">
-                  <img class="profile-pic imagecover rounded-circle mr-3" src="/img/review-1.jpg">
+        <div class="row d-flex justify-content-around">
+          <!-- First review card -->
+          <div class="card bg-light-gray col-5">
+            <div class="row">
+              <!-- Card user info -->
+              <div class="col-12 py-2 bg-primary border-bottom">
+                <div class="row">
+                  <!-- Card user image -->
+                  <div class="col-3">
+                    <img class="profile-pic rounded-circle" src="/src/assets/images/review-1.jpg">
+                  </div>
+                  <!-- Card user name and rating -->
+                  <div class="col-7">
+                    <p class="text-left">
+                      <h3 class="p-0 m-0 title-font">John Doe</h3>
+                      <span class="text-muted fw-bold">5</span>
+                      <span><i class="fas fa-star text-warning"></i></span>
+                      <span><i class="fas fa-star text-warning"></i></span>
+                      <span><i class="fas fa-star text-warning"></i></span>
+                      <span><i class="fas fa-star text-warning"></i></span>
+                      <span><i class="fas fa-star text-warning"></i></span>
+                    </p>
+                  </div>
+                  <!-- Card user date -->
+                  <div class="col-2">
+                    <p class="text-muted fw-bold text-end">25 Dec</p>
+                  </div>
                 </div>
-                <div class="d-flex flex-column align-items-left justify-content-center mt-2">
-                    <h3 class="p-0 m-0 title-font">John Doe</h3>
-                    <div>
-                      <p class="text-left">
-                        <span class="text-muted font-weight-bold">5</span>
-                        <span><i class="fas fa-star text-warning"></i></span>
-                        <span><i class="fas fa-star text-warning"></i></span>
-                        <span><i class="fas fa-star text-warning"></i></span>
-                        <span><i class="fas fa-star text-warning"></i></span>
-                        <span><i class="fas fa-star text-warning"></i></span>
-                      </p>
-                    </div>
-                </div>
-                <div class="m-0 ml-lg-auto">
-                    <p class="text-muted p-0 m-0 mb-lg-5">10 Sept</p>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center align-items-center text-center text-lg-left justify-content-lg-start my-1">
-                <h4 class="font-weight-bold p-2 m-0">"Lorem ipsum dolor sit amet"</h4>
+              </div>
+              <!-- Card user comment -->
+              <div class="col-12 py-2 border-bottom">
+                <h4 class="fw-bold p-2 m-0">"Lorem ipsum dolor sit amet"</h4>
                 <p class="card-text p-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eum quod harum ipsa ipsum, esse ut cumque sit eligendi dignissimos.</p>
-            </div>
-            <div class="row d-flex justify-content-center text-lg-left justify-content-lg-start">
-                <div class="d-flex text-success mr-3">
-                  <p class="p-2 m-0">
+              </div>
+              <!-- Card icons -->
+              <div class="col-12 d-flex py-2 bg-gray">
+                <div class="d-flex text-success me-2">
+                  <p class="p-1 m-0">
                     <i class="fas fa-thumbs-up"></i>
                   </p>
-                  <span class="p-2">20</span>
+                  <span class="p-1">20</span>
                 </div>
                 <div class="d-flex text-danger">
-                  <p class="p-2 m-0">
+                  <p class="p-1 m-0">
                     <i class="fas fa-thumbs-down"></i>
                   </p>
-                  <span class="p-2">4</span>
+                  <span class="p-1">4</span>
                 </div>
+              </div>
             </div>
           </div>
-          <div class="card bg-light px-4 py-2">
-            <div class="row d-flex p-2 flex-column justify-content-center align-items-center flex-lg-row justify-content-lg-center align-items-lg-left">
-                <div class="">
-                  <img class="profile-pic imagecover rounded-circle mr-3" src="/img/review-2.jpg">
+          <!-- Second review card -->
+          <div class="card bg-light-gray col-5">
+            <div class="row">
+              <!-- Card user info -->
+              <div class="col-12 py-2 bg-primary border-bottom">
+                <div class="row">
+                  <!-- Card user image -->
+                  <div class="col-3">
+                    <img class="profile-pic rounded-circle" src="/src/assets/images/review-2.jpg">
+                  </div>
+                  <!-- Card user name and rating -->
+                  <div class="col-7">
+                    <p class="text-left">
+                      <h3 class="p-0 m-0 title-font">Jane Doe</h3>
+                      <span class="text-muted fw-bold">3</span>
+                      <span><i class="fas fa-star text-warning"></i></span>
+                      <span><i class="fas fa-star text-warning"></i></span>
+                      <span><i class="fas fa-star text-warning"></i></span>
+                      <span><i class="far fa-star text-warning"></i></span>
+                      <span><i class="far fa-star text-warning"></i></span>
+                    </p>
+                  </div>
+                  <!-- Card user date -->
+                  <div class="col-2">
+                    <p class="text-muted fw-bold text-end">28 Dec</p>
+                  </div>
                 </div>
-                <div class="d-flex flex-column align-items-left justify-content-center mt-2">
-                    <h3 class="p-0 m-0 title-font">Jane Doe</h3>
-                    <div>
-                      <p class="text-left">
-                        <span class="text-muted font-weight-bold">3</span>
-                        <span><i class="fas fa-star text-warning"></i></span>
-                        <span><i class="fas fa-star text-warning"></i></span>
-                        <span><i class="fas fa-star text-warning"></i></span>
-                        <span><i class="far fa-star text-warning"></i></span>
-                        <span><i class="far fa-star text-warning"></i></span>
-                      </p>
-                    </div>
-                </div>
-                <div class="m-0 ml-lg-auto">
-                    <p class="text-muted p-0 m-0 mb-lg-5">2 Sept</p>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center align-items-center text-center text-lg-left justify-content-lg-start my-1">
-                <h4 class="font-weight-bold p-2 m-0">"Lorem ipsum dolor"</h4>
-                <p class="card-text p-2 m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptatibus sequi molestias autem hic ab quasi quo.</p>
-            </div>
-            <div class="row d-flex justify-content-center text-lg-left justify-content-lg-start">
-                <div class="d-flex text-success mr-3">
-                  <p class="p-2 m-0">
+              </div>
+              <!-- Card user comment -->
+              <div class="col-12 py-2 border-bottom">
+                <h4 class="fw-bold p-2 m-0">"Lorem ipsum dolor sit"</h4>
+                <p class="card-text p-2 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis pariatur dolorem veniam eligendi excepturi neque, sit quos quasi harum!</p>
+              </div>
+              <!-- Card icons -->
+              <div class="col-12 d-flex py-2 bg-gray">
+                <div class="d-flex text-success me-2">
+                  <p class="p-1 m-0">
                     <i class="fas fa-thumbs-up"></i>
                   </p>
-                  <span class="p-2">31</span>
+                  <span class="p-1">14</span>
                 </div>
                 <div class="d-flex text-danger">
-                  <p class="p-2 m-0">
+                  <p class="p-1 m-0">
                     <i class="fas fa-thumbs-down"></i>
                   </p>
-                  <span class="p-2">2</span>
+                  <span class="p-1">2</span>
                 </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Reservation section -->
-    <section id="reservation" class="section bg-light py-5">
-      <div class="container">
+    <section id="reservation" class="section bg-primary py-5">
+      <div class="container d-flex flex-column align-items-center">
         <!-- Title section -->
-        <h1 class="text-center my-5 font-weight-bold underline-primary">Reserve a table</h1>
+        <h1 class="text-center my-5 underline-primary">Reserve a table</h1>
         <!-- Form section -->
         <form id="reservation-form" class="w-75">
-          <div class="form-row">
+          <div class="row">
             <div class="form-group col-md-6">
               <label for="name">First Name</label>
               <input type="text" class="form-control" id="name">
@@ -503,8 +518,6 @@
               <label for="surname">Last Name</label>
               <input type="text" class="form-control" id="surname">
             </div>
-          </div>
-          <div class="form-row">
             <div class="form-group col-md-6">
               <label for="phone">Phone</label>
               <input type="text" class="form-control" id="phone" placeholder="11-2222-4444">
@@ -513,8 +526,6 @@
               <label for="email">Email</label>
               <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
             </div>
-          </div>
-          <div class="form-row">
             <div class="form-group col-md-6">
               <label for="persons">Number of persons</label>
               <select id="persons" class="form-control">
@@ -527,14 +538,10 @@
               <label for="date">Select your date</label>
               <input type="text" class="form-control" id="datepicker" placeholder="25/12/2020">
             </div>
-          </div>
-          <div class="form-row">
             <div class="form-group col-12">
               <label for="message">Message</label>
               <textarea id="message" class="form-control" cols="30" rows="5"></textarea>
             </div>
-          </div>
-          <div class="form-row">
             <div class="form-group col-12 d-flex justify-content-between align-items-center flex-column flex-md-row">
               <div class="custom-control custom-checkbox">
                 <input class="custom-control-input" type="checkbox" id="check">
@@ -552,23 +559,25 @@
     <section id="contact" class="section pt-5">
       <div class="container">
         <!-- Title section -->
-        <h1 class="text-center my-5 font-weight-bold underline-primary">Contact</h1>
+        <h1 class="text-center my-5 underline-primary">Contact</h1>
         <!-- Content section -->
         <div class="row py-3">
           <div class="col-12 col-md-6 col-lg-3 my-3">
-            <div class="card h-100 border-0 p-1">
-              <div class="card-body d-flex flex-column align-items-center text-center border-primary border-right border-left border-bottom">
+            <div class="card h-100 border-primary border-top-0 p-1">
+              <div class="card-body d-flex flex-column align-items-center text-center">
                 <div class="card-icon py-3">
                   <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
                 </div>
                 <div class="card-subtitle text-muted py-3 m-0">By appointment only</div>
-                <a class="text-body" href="https://www.google.com/maps/place/Caf%C3%A9+Mart%C3%ADnez/@-34.5799389,-58.4123057,17z/data=!3m1!4b1!4m8!1m2!2m1!1scafe!3m4!1s0x95bcb57b93229659:0xad3fc4da177a320d!8m2!3d-34.5799389!4d-58.410117">Av. Cerviño 3602,<br> C1425 AGS,<br> Buenos Aires</a>
+                <a class="text-body" href="https://www.google.com/maps/place/Caf%C3%A9+Mart%C3%ADnez/@-34.5799389,-58.4123057,17z/data=!3m1!4b1!4m8!1m2!2m1!1scafe!3m4!1s0x95bcb57b93229659:0xad3fc4da177a320d!8m2!3d-34.5799389!4d-58.410117">
+                  Av. Cerviño 3602, C1425 AGS, Buenos Aires
+                </a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-3">
-            <div class="card h-100 border-0 p-1">
-              <div class="card-body d-flex flex-column align-items-center text-center border-primary border-right border-left border-bottom">
+            <div class="card h-100 border-primary border-top-0 p-1">
+              <div class="card-body d-flex flex-column align-items-center text-center">
                 <div class="card-icon py-3">
                   <i class="fas fa-phone-alt fa-2x text-primary"></i>
                 </div>
@@ -578,8 +587,8 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-3">
-            <div class="card h-100 border-0 p-1">
-              <div class="card-body d-flex flex-column align-items-center text-center border-primary border-right border-left border-bottom">
+            <div class="card h-100 border-primary border-top-0 p-1">
+              <div class="card-body d-flex flex-column align-items-center text-center">
                 <div class="card-icon py-3">
                   <i class="fas fa-clock fa-2x text-primary"></i>
                 </div>
@@ -590,8 +599,8 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-3">
-            <div class="card h-100 border-0 p-1">
-              <div class="card-body d-flex flex-column align-items-center text-center border-primary border-right border-left border-bottom">
+            <div class="card h-100 border-primary border-top-0 p-1">
+              <div class="card-body d-flex flex-column align-items-center text-center">
                 <div class="card-icon py-3">
                   <i class="fas fa-envelope fa-2x text-primary"></i>
                 </div>
@@ -608,15 +617,15 @@
         <div class="row">
           <div id="map" class="col-12 p-0">
             <!-- Description not working, fix later -->
-            <iframe src="https://embed.waze.com/es/iframe?zoom=15&lat=-34.579939&lon=-58.410117&ct=livemap&pin=1&desc=1"
-            width="100%" height="100%" style="border: none"></iframe>
+            <!-- <iframe src="https://embed.waze.com/es/iframe?zoom=15&lat=-34.579939&lon=-58.410117&ct=livemap&pin=1&desc=1"
+            width="100%" height="400px" style="border: none"></iframe> -->
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer section -->
+  <!-- Footer section --> 
   <footer id="footer" class="d-flex justify-content-center align-items-center bg-light">
     <div class="container">
       <!-- Content section -->
@@ -624,23 +633,23 @@
         <div class="col-12 col-md-6 col-lg-5">
           <div class="d-flex align-items-center justify-content-between">
             <a class="navbar-brand" href="index.html">
-              <img src="/img/brew-right-logo-dark.png" id="website-logo" alt="Website Logo">
+              <img src="/src/assets/images/brew-right-logo-dark.png" id="website-logo" alt="Website Logo">
             </a>
             <div class="social-icons d-flex">
-              <a class="icon text-primary" href="#">
+              <a class="footer-icon text-primary" href="#">
                 <i class="fab fa-facebook-square fa-lg"></i>
               </a>
-              <a class="icon text-primary" href="#">
+              <a class="footer-icon text-primary" href="#">
                 <i class="fab fa-twitter-square fa-lg"></i>
               </a>
-              <a class="icon text-primary" href="#">
+              <a class="footer-icon text-primary" href="#">
                 <i class="fab fa-whatsapp-square fa-lg"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-2 d-none d-lg-flex justify-content-center">
-          <a class="icon text-secondary" href="#">
+          <a class="footer-icon text-secondary" href="#">
             <i class="fas fa-arrow-alt-circle-up fa-lg"></i>
           </a>
         </div>
@@ -653,19 +662,16 @@
       </div>
     </div>
   </footer>
-
-  <!-- AOS JS -->
+  <!-- Bootstrap Javascript files -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/popper/popper.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- AOS Javascript file -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Bootstrap JS and Jquery -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Date picker JS -->
+  <!-- Datepicker Javascript file -->
   <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-  <!-- Fontawesome -->
-  <script src="https://kit.fontawesome.com/bf3de74a9d.js" crossorigin="anonymous"></script>
-  <!-- Main JS file -->
-  <script src="/js/main.js"></script>
-
+  <!-- Main Javascript files -->
+  <script src="src/js/main.js"></script>
 </body>
 
 </html>
