@@ -118,7 +118,7 @@
         <!-- Section title -->
         <h1 class="text-center my-5 text-light"><u class="underline-secondary">Our menu</u></h1>
         <!-- Section buttons -->
-        <div class="btn-group align-self-center" role="group" aria-label="Menu types toggle button group">
+        <div class="btn-group align-self-center my-3" role="group" aria-label="Menu types toggle button group">
           <input type="radio" class="btn-check" name="btn-radio-options" id="btn-radio-all" autocomplete="off" checked>
           <label id="all-types-button" class="btn btn-secondary" for="btn-radio-all">All types</label>
         
@@ -131,25 +131,24 @@
           <input type="radio" class="btn-check" name="btn-radio-options" id="btn-radio-desserts" autocomplete="off">
           <label id="desserts-button" class="btn btn-secondary" for="btn-radio-desserts">Desserts</label>
         </div>
-        <!-- Section grid -->
-        <div class="row row-cols-2">
+        <!-- Cards grid section -->
+        <div class="row row-cols-2 justify-content-center">
+
           <!-- Coffee card column -->
-          <div class="col-12 col-md-6 my-2 drinks">
+          <div class="col-12 col-md-6 col-xl-5 my-2 drinks">
             <!-- Card container -->
             <div class="card">
+              <!-- Card row -->
               <div class="row g-0">
-                <!-- Image column -->
-                <div class="col-4 p-2">
-                  <img src="/src/assets/images/menu-hot-drink.jpg" class="img-fluid" alt="Coffee image">
+                <!-- Card image column -->
+                <div class="col-6 col-lg-4 p-2">
+                  <img src="/src/assets/images/menu-hot-drink.jpg" class="img-fluid" alt="Coffee mug on a table">
                 </div>
-                <!-- Text column -->
-                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="card-title"><u class="underline-primary">Brewed Coffee</u></h3>
-                    <h4 class="price p-1">$200</h4>
-                  </div>
+                <!-- Card text column -->
+                <div class="col-6 col-lg-8 d-flex flex-column justify-content-between p-2 text-center">
+                  <h3 class="card-title"><u class="underline-primary">Brewed Coffee</u></h3>
+                  <!-- <h4 class="price p-1">$200</h4> -->
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
-                  <p class="card-text">Lorem adipisci perferendis?</p>
                   <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
@@ -157,20 +156,19 @@
           </div>
 
           <!-- Crepes card column -->
-          <div class="col-12 col-md-6 my-2 desserts">
+          <div class="col-12 col-md-6 col-xl-5 my-2 desserts">
             <!-- Card container -->
             <div class="card">
+              <!-- Card row -->
               <div class="row g-0">
-                <!-- Image column -->
-                <div class="col-4 p-2">
-                  <img src="/src/assets/images/menu-crepes.jpg" class="img-fluid" alt="Crepes image">
+                <!-- Card image column -->
+                <div class="col-6 col-lg-4 p-2">
+                  <img src="/src/assets/images/menu-crepes.jpg" class="img-fluid" alt="Crepes with creme on a table">
                 </div>
-                <!-- Text column -->
-                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="card-title"><u class="underline-primary">Crepes</u></h3>
-                    <h4 class="price p-1">$25</h4>
-                  </div>
+                <!-- Card text column -->
+                <div class="col-6 col-lg-8 d-flex flex-column justify-content-between p-2 text-center">
+                  <h3 class="card-title"><u class="underline-primary">Crepes</u></h3>
+                  <!-- <h4 class="price p-1">$25</h4> -->
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
                   <button class="btn btn-secondary">Purchase</button>
                 </div>
@@ -179,21 +177,20 @@
           </div>
 
           <!-- Juices card column -->
-          <div class="col-12 col-md-6 my-2 drinks">
+          <div class="col-12 col-md-6 col-xl-5 my-2 drinks">
             <!-- Card container -->
             <div class="card">
+              <!-- Card row -->
               <div class="row g-0">
-                <!-- Image column -->
-                <div class="col-4 p-2">
-                  <img src="/src/assets/images/menu-cold-drink.jpg" class="img-fluid" alt="Juices image">
+                <!-- Card image column -->
+                <div class="col-6 col-lg-4 p-2">
+                  <img src="/src/assets/images/menu-cold-drink.jpg" class="img-fluid" alt="Orange juice in a glass">
                 </div>
-                <!-- Text column -->
-                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="card-title"><u class="underline-primary">Orange Juice</u></h3>
-                    <h4 class="price p-1">$100</h4>
-                  </div>
-                  <p class="card-text">Lorem adipisci perferendis?</p>
+                <!-- Card text column -->
+                <div class="col-6 col-lg-8 d-flex flex-column justify-content-between p-2 text-center">
+                  <h3 class="card-title"><u class="underline-primary">Orange Juice</u></h3>
+                  <!-- <h4 class="price p-1">$25</h4> -->
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
                   <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
@@ -201,22 +198,20 @@
           </div>
 
           <!-- Pizza column -->
-          <div class="col-12 col-md-6 my-2 snacks">
+          <div class="col-12 col-md-6 col-xl-5 my-2 snacks">
             <!-- Card container -->
             <div class="card">
+              <!-- Card row -->
               <div class="row g-0">
-                <!-- Image column -->
-                <div class="col-4 p-2">
-                  <img src="/src/assets/images/menu-pizza.jpg" class="img-fluid" alt="Pizza image">
+                <!-- Card image column -->
+                <div class="col-6 col-lg-4 p-2">
+                  <img src="/src/assets/images/menu-pizza.jpg" class="img-fluid" alt="Freshly made pizza">
                 </div>
-                <!-- Text column -->
-                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="card-title"><u class="underline-primary">Pizza</u></h3>
-                    <h4 class="price p-1">$150</h4>
-                  </div>
+                <!-- Card text column -->
+                <div class="col-6 col-lg-8 d-flex flex-column justify-content-between p-2 text-center">
+                  <h3 class="card-title"><u class="underline-primary">Pizza</u></h3>
+                  <!-- <h4 class="price p-1">$25</h4> -->
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
-                  <p class="card-text">Lorem adipisci perferendis?</p>
                   <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
@@ -224,20 +219,19 @@
           </div>
 
           <!-- Sandwiches column -->
-          <div class="col-12 col-md-6 my-2 snacks">
+          <div class="col-12 col-md-6 col-xl-5 my-2 snacks">
             <!-- Card container -->
             <div class="card">
+              <!-- Card row -->
               <div class="row g-0">
-                <!-- Image column -->
-                <div class="col-4 p-2">
-                  <img src="/src/assets/images/menu-sandwiches.jpg" class="img-fluid" alt="Sandwiches image">
+                <!-- Card image column -->
+                <div class="col-6 col-lg-4 p-2">
+                  <img src="/src/assets/images/menu-sandwiches.jpg" class="img-fluid" alt="An iron being used to make a sandwich">
                 </div>
-                <!-- Text column -->
-                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="card-title"><u class="underline-primary">Sandiwches</u></h3>
-                    <h4 class="price p-1">$5</h4>
-                  </div>
+                <!-- Card text column -->
+                <div class="col-6 col-lg-8 d-flex flex-column justify-content-between p-2 text-center">
+                  <h3 class="card-title"><u class="underline-primary">Sandwiches</u></h3>
+                  <!-- <h4 class="price p-1">$25</h4> -->
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
                   <button class="btn btn-secondary">Purchase</button>
                 </div>
@@ -246,22 +240,20 @@
           </div>
 
           <!-- Churros column -->
-          <div class="col-12 col-md-6 my-2 desserts">
+          <div class="col-12 col-md-6 col-xl-5 my-2 desserts">
             <!-- Card container -->
             <div class="card">
+              <!-- Card row -->
               <div class="row g-0">
-                <!-- Image column -->
-                <div class="col-4 p-2">
-                  <img src="/src/assets/images/menu-churros.jpg" class="img-fluid" alt="Churros image">
+                <!-- Card image column -->
+                <div class="col-6 col-lg-4 p-2">
+                  <img src="/src/assets/images/menu-churros.jpg" class="img-fluid" alt="Three churros in a paper package">
                 </div>
-                <!-- Text column -->
-                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="card-title"><u class="underline-primary">Churros</u></h3>
-                    <h4 class="price p-1">$40</h4>
-                  </div>
+                <!-- Card text column -->
+                <div class="col-6 col-lg-8 d-flex flex-column justify-content-between p-2 text-center">
+                  <h3 class="card-title"><u class="underline-primary">Churros</u></h3>
+                  <!-- <h4 class="price p-1">$25</h4> -->
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
-                  <p class="card-text">Lorem adipisci perferendis?</p>
                   <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
@@ -269,22 +261,20 @@
           </div>
 
           <!-- Donuts column -->
-          <div class="col-12 col-md-6 my-2 desserts">
+          <div class="col-12 col-md-6 col-xl-5 my-2 desserts">
             <!-- Card container -->
             <div class="card">
+              <!-- Card row -->
               <div class="row g-0">
-                <!-- Image column -->
-                <div class="col-4 p-2">
-                  <img src="/src/assets/images/menu-donuts.jpg" class="img-fluid" alt="Donuts image">
+                <!-- Card image column -->
+                <div class="col-6 col-lg-4 p-2">
+                  <img src="/src/assets/images/menu-donuts.jpg" class="img-fluid" alt="Three donuts stacked on each other">
                 </div>
-                <!-- Text column -->
-                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="card-title"><u class="underline-primary">Donuts</u></h3>
-                    <h4 class="price p-1">$75</h4>
-                  </div>
+                <!-- Card text column -->
+                <div class="col-6 col-lg-8 d-flex flex-column justify-content-between p-2 text-center">
+                  <h3 class="card-title"><u class="underline-primary">Donuts</u></h3>
+                  <!-- <h4 class="price p-1">$25</h4> -->
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
-                  <p class="card-text">Lorem adipisci perferendis?</p>
                   <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
@@ -292,26 +282,26 @@
           </div>
 
           <!-- Cupcakes column -->
-          <div class="col-12 col-md-6 my-2 desserts">
+          <div class="col-12 col-md-6 col-xl-5 my-2 desserts">
             <!-- Card container -->
             <div class="card">
+              <!-- Card row -->
               <div class="row g-0">
-                <!-- Image column -->
-                <div class="col-4 p-2">
-                  <img src="/src/assets/images/menu-cupcakes.jpg" class="img-fluid" alt="Cupcakes image">
+                <!-- Card image column -->
+                <div class="col-6 col-lg-4 p-2">
+                  <img src="/src/assets/images/menu-cupcakes.jpg" class="img-fluid" alt="A cupcake on a plate">
                 </div>
-                <!-- Text column -->
-                <div class="col-8 d-flex flex-column justify-content-between align-items-left p-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="card-title"><u class="underline-primary">Cupcakes</u></h3>
-                    <h4 class="price p-1">$155</h4>
-                  </div>
-                  <p class="card-text">Lorem adipisci perferendis?</p>
+                <!-- Card text column -->
+                <div class="col-6 col-lg-8 d-flex flex-column justify-content-between p-2 text-center">
+                  <h3 class="card-title"><u class="underline-primary">Cupcakes</u></h3>
+                  <!-- <h4 class="price p-1">$25</h4> -->
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, adipisci perferendis?</p>
                   <button class="btn btn-secondary">Purchase</button>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

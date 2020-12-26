@@ -23,11 +23,16 @@ $custom-colors: (
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 
-// Modify bootstrap utility class
+// Modify bootstrap button  class
 .btn {
   border-radius: 0!important;
 }
 
+// Modify bootstrap card text class
+.card-text {
+  padding: 0;
+  margin: 0;
+}
 
 // Old code
 
