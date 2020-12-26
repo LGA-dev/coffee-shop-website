@@ -32,10 +32,10 @@
   <!-- Header section -->
   <header>
     <nav class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top" id="nav">
-      <div class="container">
+      <div class="container d-flex">
         <!-- Logo -->
         <a class="navbar-brand p-0 m-0" href="index.html">
-          <img src="src/assets/images/brew-right-logo-light.png" id="website-logo" alt="Website Logo">
+          <img src="src/assets/images/brew-right-logo-light.png" class="img-fluid" id="website-logo" alt="Website Logo">
         </a>
         <!-- Toggle button -->
         <button id="toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,22 +81,30 @@
       </div>
     </section>
     <!-- About section -->
-    <section id="about" class="section py-5">
+    <section id="about" class="section py-1">
       <div class="container my-5">
         <!-- Section title -->
         <h1 class="text-center my-5"><u class="underline-primary">About us</u></h1>
         <!-- Section content -->
         <div class="row">
-          <!-- Image column -->
-          <div class="col-12 col-lg-6">
-            <img src="src/assets/images/about-2.jpg" class="img-fluid d-block w-100" alt="Responsive image">
+          <!-- About us #1 Image column -->
+          <div class="col-12 col-lg-6 align-self-center">
+            <img src="src/assets/images/about-2.jpg" class="img-fluid" alt="Our founders working inside the store">
           </div>
-          <!-- Text column -->
-          <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center text-justify align-items-lg-start text-lg-left ps-5">
-            <h1 class="mb-4">Brew<u class="text-primary">Right</u></h1>
+          <!-- About us #1 Text column -->
+          <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start ps-lg-5">
+            <h2 class="my-4">Our <u class="text-primary">History</u></h2>
             <p>
               This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
             </p>
+          </div>
+          <!-- About us #2 Image column -->
+          <div class="order-lg-1 col-12 col-lg-6 align-self-center pt-lg-5">
+            <img src="src/assets/images/about-3.jpg" class="img-fluid" alt="Our employee of the month posing for the camera">
+          </div>
+          <!-- About us #2 Text column -->
+          <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center align-items-lg-end text-center text-lg-end pe-lg-5 pt-lg-5">
+            <h2 class="my-4">Our <u class="text-primary">Staff</u></h2>
             <p>
               This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
             </p>
@@ -633,7 +641,7 @@
         <div class="col-12 col-md-6 col-lg-5">
           <div class="d-flex align-items-center justify-content-between">
             <a class="navbar-brand" href="index.html">
-              <img src="/src/assets/images/brew-right-logo-dark.png" id="website-logo" alt="Website Logo">
+              <img src="/src/assets/images/brew-right-logo-dark.png" class="img-fluid" id="website-logo" alt="Website Logo">
             </a>
             <div class="social-icons d-flex">
               <a class="footer-icon text-primary" href="#">

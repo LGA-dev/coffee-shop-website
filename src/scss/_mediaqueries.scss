@@ -1,7 +1,8 @@
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+@include media-breakpoint-up(sm) {
   #website-logo {
-    height: 3.25rem;
+    height: 3.75rem;
+    // background-color: rgba(251, 255, 0, 0.507);
   }
 
   .carousel-image {
@@ -10,20 +11,22 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
+  #website-logo {
+    height: 4rem;
+    // background-color: rgba(0, 255, 0, 0.507);
+  }
+  
   .carousel-image {
     height: 500px;
   }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
   #website-logo {
-    height: 4.25rem;
-  }
-
-  .carousel-image {
-    height: 600px;
+    height: auto;
+    // background-color: rgba(0, 255, 213, 0.507);
   }
 
   .sidebar-section {
@@ -32,5 +35,19 @@
 
   .sidebar-item {
     position: absolute !important;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+  #website-logo {
+    // background-color: rgba(0, 17, 255, 0.507);
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@include media-breakpoint-up(xxl) {
+  #website-logo {
+    // background-color: rgba(183, 0, 255, 0.507);
   }
 }
