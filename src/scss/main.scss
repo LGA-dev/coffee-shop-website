@@ -146,10 +146,21 @@ h1, h2, h3, .title-font, .card-title {
   height: 100px;
 }
 
+/* ##    03.g Reservation    ## */
+// Custom radio pointer
+.custom-radio,
+.custom-control-label {
+  cursor: pointer;
+}
+
+// Hide date picker icon
+span.input-group-append {
+  display: none;
+}
+
 /* ##    03.b About    ## */
 /* ##    03.c Menu    ## */
 /* ##    03.e News    ## */
-/* ##    03.g Reservation    ## */
 /* ##    03.h Contact    ## */
 
 
