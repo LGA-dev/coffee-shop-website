@@ -62,10 +62,10 @@ h1, h2, h3, .title-font, .card-title {
   text-underline-offset: 20%;
 }
 
-// Shadow for carousel text
-.text-shadow {
-  text-shadow: 1px 1px 5px black;
-}
+// Shadow for carousel text //unused
+// .text-shadow {
+//   text-shadow: 1px 1px 5px black;
+// }
 
 // Price tags for menu item cards
 .price {
@@ -75,12 +75,6 @@ h1, h2, h3, .title-font, .card-title {
   background-color: $secondary-color;
   color: white;
   margin: 0;
-}
-
-// Custom carousel width
-.carousel {
-  max-width:900px;
-  max-height:600px;
 }
 
 // Custom muted text
@@ -112,10 +106,7 @@ h1, h2, h3, .title-font, .card-title {
   // background-color: rgba(255, 0, 0, 0.5);
 }
 
-.active {
-  text-decoration: underline $primary-color 1px;
-  text-underline-offset: 15%;
-}
+
 
 /* #    03. Main    # */
 /* ##    03.a Hero    ## */
@@ -139,6 +130,8 @@ h1, h2, h3, .title-font, .card-title {
 .carousel-control-prev,
 .carousel-control-next {
   width: 50px;
+  height: auto;
+  background-color: $primary-color;
 
   &-icon {
     height: 50px;

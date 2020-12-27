@@ -34,6 +34,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   margin: 0;
 }
 
+// Modify active navbar item style
+.active {
+  text-decoration: underline $primary-color 1px;
+  text-underline-offset: 15%;
+}
+
 // Old code
 
 
