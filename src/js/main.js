@@ -106,8 +106,9 @@ const togglerButton = document.getElementById("toggler");
 
 
 // Radio and Input constants
-const pickUpRadio =  document.getElementById('custom-radio-pickup');
-const deliveryAddressInput =  document.getElementById('delivery-address-input');
+// Address section
+
+// Payment section
 const cashAtLocationRadio =  document.getElementById('custom-radio-cash-at-location');
 const creditCardNumberInput =  document.getElementById('cc-number');
 const creditCardNameInput =  document.getElementById('cc-name');
@@ -215,14 +216,18 @@ togglerButton.addEventListener('click', function() {
 
 
 // **** 05. Delivery status function ****
+const pickUpRadio =  document.getElementById('pickup-radio-button');
+const deliveryAddressInput =  document.getElementById('delivery-address-input');
 
 // This function will check if the pickup radio is checked
+// If true, add the disabled attribute to the input, otherwise remove it
 function deliveryRadioCheck() {
-  // If true, add the disabled attribute to the input, otherwise remove it
   if (pickUpRadio.checked) {
     deliveryAddressInput.disabled = "disabled";
+    window.alert("Input disabled");
   } else {
     deliveryAddressInput.removeAttribute('disabled');
+    window.alert("Input enabled");
   }
 }
 

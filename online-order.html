@@ -11,11 +11,13 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vibrant-knuth-615579.netlify.app/">
 
-  <title>BrewRight - Online order</title>
+  <!-- Page's title -->
+  <title>BrewRight - Coffee Shop</title>
+
   <!-- Site icon file -->
-  <link rel="icon" href="favicon.png" />
+  <link href="favicon.png" rel="icon"/>
   <!-- FontAwesome css file -->
-  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
+  <link href="/vendor/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- AOS CSS -->
@@ -23,46 +25,38 @@
   <!-- Date picker CSS-->
   <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
   <!-- Main css file (Contains Bootstrap) -->
-  <link rel="stylesheet" href="src/css/main.css">
-  <!-- Page's title -->
-  <title>BrewRight - Coffee Shop</title>
+  <link href="src/css/main.css" rel="stylesheet">
 </head>
 
-<body class="text-dark" data-spy="scroll" data-target=".navbar" data-offset="0">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
   <!-- Header section -->
-  <header id="header">
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark non-fixed-top py-lg-0">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="nav">
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand p-0 m-0" href="index.html">
-          <img src="/img/brew-right-logo-light.png" id="website-logo" alt="Website Logo">
+          <img src="src/assets/images/brew-right-logo-light.png" class="d-block" id="website-logo" alt="Website Logo">
         </a>
-        <!-- Toggler button -->
-        <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Toggle button -->
+        <button id="toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Content to toggle -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto"> <!-- ml-auto aligns the unordered list items to the right -->
-            <li class="nav-item">
-              <a class="nav-link" href="index.html" >Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="online-order.html">Order online</a>
-            </li>
-          </ul>
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="index.html">Return to the main page</a>
+          </div>
         </div>
       </div>
     </nav>
   </header>
-
-  <!-- Main content section -->
-  <main>
-    <!-- Jumbotron section -->
-    <section id="jumbotron" class="jumbotron jumbotron-fluid bg-dark text-white">
+  
+  <!-- Main section -->
+  <main id="main">
+    <!-- Page title section -->
+    <section class="bg-primary text-white text-center p-5">
       <div class="container">
-        <h1 class="display-4">
+        <h1 class="display-4 py-5">
           Online order
         </h1>
       </div>
@@ -71,331 +65,256 @@
     <!-- Orders section -->
     <section id="orders">
       <div class="container">
-        <!-- Content section -->
-        <div class="row">
-          <!-- Items section -->
-          <div class="col-12 col-lg-8">
-            <!-- Panel heading -->
-            <div class="panel-header bg-dark text-light d-flex align-items-center" id="headingMyOrder" data-toggle="collapse" data-target="#collapseMyOrder" aria-expanded="true" aria-controls="collapseMyOrder">
-              <!-- Panel number -->
-              <div class="panel-header-item mr-3 bg-primary">
-                <p class="m-0">
-                  1
-                </p>
-              </div>
-              <!-- Panel title -->
-              <div class="panel-header-title">
-                <a class="m-0 mr-3">
-                  My order
-                </a>
-              </div>
-              <!-- Panel icon -->
-              <div class="panel-header-item ml-auto">
-                <i class="fas fa-chevron-up"></i>
-              </div>
+        <!-- My order section -->
+        <div class="collapsible-section">
+          <!-- My order panel header -->
+          <div class="panel-header bg-dark text-light d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#myOrder" role="button" aria-expanded="false" aria-controls="myOrder">
+            <!-- Panel number -->
+            <div class="panel-header-item bg-secondary">
+              <p class="m-0">
+                1
+              </p>
             </div>
-            <!-- Content to collapse -->
-            <div id="collapseMyOrder" class="collapse show py-4" aria-label="headingMyOrder">
-              <!-- Card body (Order one)-->
-              <div class="card d-flex flex-row align-items-center p-4 mb-2 bg-light">
-                <!-- Card image -->
-                <img class="mr-3 imagecover" src="/img/menu-hot-drink.jpg" width="90" height="90" alt="">
-                <!-- Card text -->
-                <div class="card-text mr-5">
-                  <h5 class="font-weight-bold">
-                    Hot Coffee
-                  </h5>
-                  <p class="text-muted m-0">This is an item on your menu.<br>
-                    Give your item a brief description</p>
-                </div>
-                <!-- Card inputs -->
-                <div class="d-flex align-items-end align-items-md-center flex-column flex-md-row mr-auto">
-                  <!-- Input group -->
-                  <div class="input-group">
-                    <!-- Delete button -->
-                    <div class="input-group-prepend">
-                      <button class="btn btn-dark btn-square ">
-                        <i class="fas fa-minus"></i>
-                      </button>
-                    </div>
-                    <!-- X button -->
-                    <input type="text" class="form-control border-light text-center form-total-items" value="2">
-                    <!-- Add button -->
-                    <div class="input-group-append">
-                      <button class="btn btn-dark btn-square ">
-                        <i class="fas fa-plus"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Price tag -->
-                <div class="price">
-                  <p class="m-0">$<strong>20</strong></p>
-                </div>
-              </div>
-
-              <!-- Card body (Order two)-->
-              <div class="card d-flex flex-row align-items-center p-4 bg-light">
-                <!-- Card image -->
-                <img class="mr-3 imagecover" src="/img/menu-cold-drink.jpg" width="90" height="90" alt="">
-                <!-- Card text -->
-                <div class="card-text mr-5">
-                  <h5 class="font-weight-bold">
-                    Orange Juice
-                  </h5>
-                  <p class="text-muted m-0">This is an item on your menu.<br>
-                    Give your item a brief description</p>
-                </div>
-                <!-- Card inputs -->
-                <div class="d-flex align-items-end align-items-md-center flex-column flex-md-row mr-auto">
-                  <!-- Input group -->
-                  <div class="input-group">
-                    <!-- Delete button -->
-                    <div class="input-group-prepend">
-                      <button class="btn btn-dark btn-square ">
-                        <i class="fas fa-minus"></i>
-                      </button>
-                    </div>
-                    <!-- X button -->
-                    <input type="text" class="form-control border-light text-center form-total-items" value="5">
-                    <!-- Add button -->
-                    <div class="input-group-append">
-                      <button class="btn btn-dark btn-square ">
-                        <i class="fas fa-plus"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Price tag -->
-                <div class="price">
-                  <p class="m-0">$<strong>10</strong></p>
-                </div>
-              </div>
-
+            <!-- Panel title -->
+            <div class="panel-header-title">
+              <a class="m-0">
+                My order
+              </a>
             </div>
-
-            <!-- Address section -->
-            <!-- Panel heading -->
-            <div class="panel-header bg-dark text-light d-flex align-items-center" id="headingAddress" data-toggle="collapse" data-target="#collapseAddress" aria-expanded="true" aria-controls="collapseAddress">
-              <!-- Panel number -->
-              <div class="panel-header-item mr-3 bg-primary">
-                <p class="m-0">
-                  2
-                </p>
-              </div>
-              <!-- Panel title -->
-              <div class="panel-header-title">
-                <a class="m-0 mr-3">
-                  Address
-                </a>
-              </div>
-              <!-- Panel icon -->
-              <div class="panel-header-item ml-auto">
-                <i class="fas fa-chevron-up"></i>
-              </div>
-            </div>
-            <!-- Content to collapse -->
-            <div id="collapseAddress" class="collapse show py-4" aria-label="headingAddress">
-              <!-- Form section -->
-              <form class="bg-light p-4 border rounded w-100">
-                <div class="form-group">
-                  <div class="form-label">
-                    <h5 class="font-weight-bold mb-2">
-                      Choose the delivery method
-                    </h5>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="custom-radio-delivery" name="customRadioShippingType" class="custom-control-input" onclick="deliveryRadioCheck()">
-                    <label class="custom-control-label" for="custom-radio-delivery">Delivery</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="custom-radio-pickup" name="customRadioShippingType" class="custom-control-input" onclick="deliveryRadioCheck()">
-                    <!-- Choosing this should disable every input below -->
-                    <label class="custom-control-label" for="custom-radio-pickup">Pick up</label>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="name">First Name</label>
-                    <input type="text" class="form-control" id="name">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="surname">Last Name</label>
-                    <input type="text" class="form-control" id="surname">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="phone">Phone</label>
-                    <input type="text" class="form-control" id="phone" placeholder="11-2222-4444">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="delivery-address-input" placeholder="Pueyrredon 2103">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-12 mb-0">
-                    <label for="message">Message</label>
-                    <textarea id="message" class="form-control" cols="30" rows="5"></textarea>
-                  </div>
-                </div>
-              </form>
-            </div>
-
-            <!-- Payment section -->
-            <!-- Panel heading -->
-            <div class="panel-header bg-dark text-light d-flex align-items-center" id="headingPayment" data-toggle="collapse" data-target="#collapsePayment" aria-expanded="true" aria-controls="collapsePayment">
-              <!-- Panel number -->
-              <div class="panel-header-item mr-3 bg-primary">
-                <p class="m-0">
-                  3
-                </p>
-              </div>
-              <!-- Panel title -->
-              <div class="panel-header-title">
-                <a class="m-0 mr-3">
-                  Payment
-                </a>
-              </div>
-              <!-- Panel icon -->
-              <div class="panel-header-item ml-auto">
-                <i class="fas fa-chevron-up"></i>
-              </div>
-            </div>
-            <!-- Content to collapse -->
-            <div id="collapsePayment" class="collapse show py-4" aria-label="headingPayment">
-              <!-- Form section -->
-              <form class="bg-light p-4 border rounded w-100">
-                <div class="form-group">
-                  <div class="form-label">
-                    <h5 class="font-weight-bold mb-2">
-                      Choose the payment method
-                    </h5>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="custom-radio-credit-card" name="customRadioPaymentType" class="custom-control-input" onclick="paymentRadioCheck()">
-                    <label class="custom-control-label" for="custom-radio-credit-card">Credit card</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="custom-radio-cash-at-location" name="customRadioPaymentType" class="custom-control-input" onclick="paymentRadioCheck()">
-                    <!-- Choosing this should disable every input below -->
-                    <label class="custom-control-label" for="custom-radio-cash-at-location">Cash at location</label>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-12 col-sm-6">
-                    <label for="cc-number">Card number</label>
-                    <input type="text" class="form-control" id="cc-number" placeholder="1234-5678-9012">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-12 col-sm-6">
-                    <label for="cc-name">Name on card</label>
-                    <input type="text" class="form-control" id="cc-name" placeholder="John Doe">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-8 col-sm-4 mb-0">
-                    <label for="cc-date">Expiry date</label>
-                    <input type="text" class="form-control" id="cc-date" placeholder="12-2020">
-                  </div>
-                  <div class="form-group col-4 col-sm-2 mb-0">
-                    <!-- Add popout later -->
-                    <label class="cc-cvc" for="cc-cvc">
-                        CVC
-                        <a tabindex="0" class="" role="button" data-toggle="popover" data-placement="right" data-content="CVV number is printed on the signature panel on the back of the card immediately after the card's account number.">
-                          <i class="fas fa-question-circle"></i>
-                        </a>
-                    </label>
-                    <input type="text" class="form-control" id="cc-cvc" placeholder="C592">
-                  </div>
-                </div>
-              </form>
+            <!-- Panel icon -->
+            <div class="panel-header-item">
+              <i class="fas fa-chevron-up"></i>
             </div>
           </div>
-          <!-- Sidebar section -->
-          <div class="col-12 col-lg-4" >
-            <div class="sidebar-section">
-              <div class="sidebar-item">
-                <div class="make-me-sticky bg-light border p-4">
-                  <div class="sidebar-title mt-2">
-                    <strong>My order</strong>
+          <!-- My order panel body -->
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="myOrder">
+                <!-- (Order #1) Card body -->
+                <div class="card card-body bg-gray d-flex flex-column flex-md-row align-items-center justify-content-md-around p-4 bg-light">
+                  <!-- Card image -->
+                  <img class="order-item-image border border-2 border-secondary" src="src/assets/images/menu-hot-drink.jpg" width="100" height="100" alt="Coffee mug on a table">
+                  <!-- Price tag -->
+                  <h2 class="price p-1 my-2 order-md-1">
+                    $<strong>20</strong>
+                  </h2>
+                  <!-- Card text -->
+                  <div class="card-text text-center">
+                    <h5 class="font-weight-bold">
+                      Hot Coffee
+                    </h5>
+                    <p class="m-0">
+                      This is an item on your menu.<br>
+                      Give your item a brief description
+                    </p>
                   </div>
-                  <div class="sidebar-order d-flex justify-content-between mt-2">
-                    <div class="sidebar-order-item">
-                      2 × Hot Coffee
+                  <!-- Card inputs -->
+                  <div class="d-flex mt-2">
+                    <!-- Input group -->
+                    <div class="input-group">
+                      <!-- Delete button -->
+                      <div class="input-group-prepend">
+                        <button class="btn btn-dark btn-square">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                      </div>
+                      <!-- Items counter -->
+                      <input type="text" class="form-control text-center form-total-items" value="2">
+                      <!-- Add button -->
+                      <div class="input-group-append">
+                        <button class="btn btn-dark btn-square">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
                     </div>
-                    <div class="sidebar-order-price">
-                      $<strong>40</strong>
-                    </div>
-                  </div>
-                  <div class="sidebar-order d-flex justify-content-between mt-2">
-                    <div class="sidebar-order-item">
-                      5 × Orange Juice
-                    </div>
-                    <div class="sidebar-order-price">
-                      $<strong>50</strong>
-                    </div>
-                  </div>
-
-                  <hr class="my-4">
-
-                  <div class="sidebar-order d-flex justify-content-between mt-2">
-                    <div class="sidebar-order-item">
-                      Delivery
-                    </div>
-                    <div class="sidebar-order-price">
-                      $ <strong>5</strong>
-                    </div>
-                  </div>
-                  <div class="sidebar-order d-flex justify-content-between mt-2">
-                    <div class="sidebar-order-item">
-                      <strong>TOTAL</strong>
-                    </div>
-                    <div class="sidebar-order-price">
-                      $<strong>95</strong>
-                    </div>
-                  </div>
-                  <div class="sidebar-button mt-2">
-                    <button class="btn btn-primary w-100">
-                      Place order now
-                    </button>
                   </div>
                 </div>
+                <!-- (Order #2) Card body -->
+                <div class="card card-body bg-gray d-flex flex-column flex-md-row align-items-center justify-content-md-around p-4 bg-light">
+                  <!-- Card image -->
+                  <img class="order-item-image border border-2 border-secondary" src="src/assets/images/menu-cold-drink.jpg" width="100" height="100" alt="Orange juice in a glass">
+                  <!-- Price tag -->
+                  <h2 class="price p-1 my-2 order-md-1">
+                    $<strong>45</strong>
+                  </h2>
+                  <!-- Card text -->
+                  <div class="card-text text-center">
+                    <h5 class="font-weight-bold">
+                      Orange Juice
+                    </h5>
+                    <p class="m-0">
+                      This is an item on your menu.<br>
+                      Give your item a brief description
+                    </p>
+                  </div>
+                  <!-- Card inputs -->
+                  <div class="d-flex mt-2">
+                    <!-- Input group -->
+                    <div class="input-group">
+                      <!-- Delete button -->
+                      <div class="input-group-prepend">
+                        <button class="btn btn-dark btn-square">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                      </div>
+                      <!-- Items counter -->
+                      <input type="text" class="form-control text-center form-total-items" value="3">
+                      <!-- Add button -->
+                      <div class="input-group-append">
+                        <button class="btn btn-dark btn-square">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- My address section -->
+        <div class="collapsible-section">
+          <!-- My order panel header -->
+          <div class="panel-header bg-dark text-light d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#myAddress" role="button" aria-expanded="false" aria-controls="myAddress">
+            <!-- Panel number -->
+            <div class="panel-header-item bg-secondary">
+              <p class="m-0">
+                2
+              </p>
+            </div>
+            <!-- Panel title -->
+            <div class="panel-header-title">
+              <a class="m-0">
+                Address
+              </a>
+            </div>
+            <!-- Panel icon -->
+            <div class="panel-header-item">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </div>
+          <!-- My order panel body -->
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="myAddress">
+                <!-- Form section -->
+                <form class="bg-gray p-4 border rounded">
+                  <div class="row g-3">
+                    <label class="form-check-label">
+                      Delivery type
+                    </label>
+                    <div class="input-group">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="delivery-radio-button" onclick="deliveryRadioCheck()" checked>
+                        <label class="form-check-label" for="delivery-radio-button">
+                          Delivery
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="pickup-radio-button" onclick="deliveryRadioCheck()">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Pick up
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label for="name">Your full name</label>
+                      <input type="text" class="form-control" placeholder="Full name" aria-label="Full name">
+                    </div>
+                    <div class="col-12">
+                      <label for="surname">Your phone number</label>
+                      <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number">
+                    </div>
+                    <div class="col-12">
+                      <label for="phone">Your email</label>
+                      <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="col-12">
+                      <label for="address">Your address</label>
+                      <input type="text" class="form-control" placeholder="Location address" id="delivery-address-input" aria-label="Location address">
+                    </div>
+                    <div class="col-12">
+                      <label for="floatingTextarea">Comments</label>
+                      <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 150px"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="form-group">
+                    <div class="form-label">
+                      <h5 class="font-weight-bold mb-2">
+                        Choose the delivery method
+                      </h5>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="custom-radio-delivery" name="customRadioShippingType" class="custom-control-input" onclick="deliveryRadioCheck()">
+                      <label class="custom-control-label" for="custom-radio-delivery">Delivery</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="custom-radio-pickup" name="customRadioShippingType" class="custom-control-input" onclick="deliveryRadioCheck()">
+                      <label class="custom-control-label" for="custom-radio-pickup">Pick up</label> 
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="name">First Name</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="surname">Last Name</label>
+                      <input type="text" class="form-control" id="surname">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="phone">Phone</label>
+                      <input type="text" class="form-control" id="phone" placeholder="11-2222-4444">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="address">Address</label>
+                      <input type="text" class="form-control" id="delivery-address-input" placeholder="Pueyrredon 2103">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-12 mb-0">
+                      <label for="message">Message</label>
+                      <textarea id="message" class="form-control" cols="30" rows="5"></textarea>
+                    </div>
+                  </div> -->
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </main>
-
-  <!-- Footer section -->
-  <footer id="footer" class="d-flex justify-content-center align-items-center bg-light">
+  
+  <!-- Footer section --> 
+  <footer id="footer" class="d-flex justify-content-center align-items-center bg-gray">
     <div class="container">
+      <!-- Content section -->
       <div class="row align-items-center">
         <div class="col-12 col-md-6 col-lg-5">
           <div class="d-flex align-items-center justify-content-between">
             <a class="navbar-brand" href="index.html">
-              <img src="/img/brew-right-logo-dark.png" id="website-logo" alt="Website Logo">
+              <img src="/src/assets/images/brew-right-logo-dark.png" class="d-block" id="website-logo" alt="Website Logo">
             </a>
             <div class="social-icons d-flex">
-              <a class="icon text-primary" href="#">
+              <a class="footer-icon text-primary" href="#">
                 <i class="fab fa-facebook-square fa-lg"></i>
               </a>
-              <a class="icon text-primary" href="#">
+              <a class="footer-icon text-primary" href="#">
                 <i class="fab fa-twitter-square fa-lg"></i>
               </a>
-              <a class="icon text-primary" href="#">
+              <a class="footer-icon text-primary" href="#">
                 <i class="fab fa-whatsapp-square fa-lg"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-2 d-none d-lg-flex justify-content-center">
-          <a class="icon text-secondary" href="#">
+          <a class="footer-icon text-secondary" href="#">
             <i class="fas fa-arrow-alt-circle-up fa-lg"></i>
           </a>
         </div>
@@ -408,41 +327,12 @@
       </div>
     </div>
   </footer>
-
-  <!-- Bootstrap JS and Jquery -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Fontawesome -->
-  <script src="https://kit.fontawesome.com/bf3de74a9d.js" crossorigin="anonymous"></script>
-  <!-- Main JS file -->
-  <script src="/js/main.js"></script>
-
+  
+  <!-- Bootstrap Javascript files -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Javascript files -->
+  <script src="src/js/main.js"></script>
 </body>
 
 </html>
-
-<nav class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top" id="nav">
-  <div class="container d-flex">
-    <!-- Logo -->
-    <a class="navbar-brand p-0 m-0" href="index.html">
-      <img src="src/assets/images/brew-right-logo-light.png" class="img-fluid" id="website-logo" alt="Website Logo">
-    </a>
-    <!-- Toggle button -->
-    <button id="toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Navbar Items -->
-    <div class="collapse navbar-collapse" id="navbar">
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#menu">Our Menu</a>
-        <a class="nav-link" href="#gallery">Gallery</a>
-        <a class="nav-link" href="#news">News</a>
-        <a class="nav-link" href="#reviews">Reviews</a>
-        <a class="nav-link" href="#reservation">Reservation</a>
-        <a class="nav-link" href="#contact">Contact</a>
-      </div>
-    </div>
-  </div>
-</nav>
