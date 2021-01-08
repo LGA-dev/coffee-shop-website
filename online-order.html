@@ -212,7 +212,7 @@
                       </div>
                       <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="pickup-radio-button" onclick="deliveryRadioCheck()">
-                        <label class="form-check-label" for="flexRadioDefault2">
+                        <label class="form-check-label" for="pickup-radio-button">
                           Pick up
                         </label>
                       </div>
@@ -240,47 +240,73 @@
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="form-group">
-                    <div class="form-label">
-                      <h5 class="font-weight-bold mb-2">
-                        Choose the delivery method
-                      </h5>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- My address section -->
+        <div class="collapsible-section">
+          <!-- My order panel header -->
+          <div class="panel-header bg-dark text-light d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#myPayment" role="button" aria-expanded="false" aria-controls="myPayment">
+            <!-- Panel number -->
+            <div class="panel-header-item bg-secondary">
+              <p class="m-0">
+                3
+              </p>
+            </div>
+            <!-- Panel title -->
+            <div class="panel-header-title">
+              <a class="m-0">
+                Payment
+              </a>
+            </div>
+            <!-- Panel icon -->
+            <div class="panel-header-item">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </div>
+          <!-- My order panel body -->
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="myPayment">
+                <!-- Form section -->
+                <form class="bg-gray p-4 border rounded">
+                  <div class="row g-3">
+                    <label class="form-check-label">
+                      Choose the payment method
+                    </label>
+                    <div class="input-group">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="credit-card-payment-button" onclick="paymentRadioCheck()" checked>
+                        <label class="form-check-label" for="credit-card-payment-button">
+                          Credit card
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="cash-at-location-payment-button" onclick="paymentRadioCheck()">
+                        <label class="form-check-label" for="cash-at-location-payment-button">
+                          Cash at location
+                        </label>
+                      </div>
                     </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="custom-radio-delivery" name="customRadioShippingType" class="custom-control-input" onclick="deliveryRadioCheck()">
-                      <label class="custom-control-label" for="custom-radio-delivery">Delivery</label>
+                    <div class="col-12">
+                      <label for="name">Card number</label>
+                      <input id="cc-number" type="text" class="form-control" placeholder="" aria-label="Full name">
                     </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="custom-radio-pickup" name="customRadioShippingType" class="custom-control-input" onclick="deliveryRadioCheck()">
-                      <label class="custom-control-label" for="custom-radio-pickup">Pick up</label> 
+                    <div class="col-12">
+                      <label for="surname">Name on card</label>
+                      <input id="cc-name" type="text" class="form-control" placeholder="" aria-label="Phone number">
+                    </div>
+                    <div class="col-8">
+                      <label for="phone">Expiry date</label>
+                      <input id="cc-date" type="email" class="form-control" placeholder="" aria-label="Email">
+                    </div>
+                    <div class="col-4">
+                      <label for="address">CVC</label>
+                      <input id="cc-cvc"  type="text" class="form-control" placeholder="" aria-label="Location address">
                     </div>
                   </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="name">First Name</label>
-                      <input type="text" class="form-control" id="name">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="surname">Last Name</label>
-                      <input type="text" class="form-control" id="surname">
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="phone">Phone</label>
-                      <input type="text" class="form-control" id="phone" placeholder="11-2222-4444">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="address">Address</label>
-                      <input type="text" class="form-control" id="delivery-address-input" placeholder="Pueyrredon 2103">
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-12 mb-0">
-                      <label for="message">Message</label>
-                      <textarea id="message" class="form-control" cols="30" rows="5"></textarea>
-                    </div>
-                  </div> -->
                 </form>
               </div>
             </div>
@@ -330,7 +356,7 @@
   
   <!-- Bootstrap Javascript files -->
   <script src="/vendor/jquery/jquery.min.js"></script>
-  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- Main Javascript files -->
   <script src="src/js/main.js"></script>
 </body>

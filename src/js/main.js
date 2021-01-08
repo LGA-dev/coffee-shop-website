@@ -1,10 +1,10 @@
-// import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
-// Delete these if you don't need them
-
 // Enable popovers (popovers aren't going to work without this)
 // $(function () {
 //   $('[data-toggle="popover"]').popover()
 // })
+
+
+
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
@@ -71,20 +71,35 @@ function checkBootstrap() {
 
 // **** 00. Global variables and constants ****
 
+const pickUpRadio = document.getElementById('pickup-radio-button');
+const deliveryAddressInput = document.getElementById('delivery-address-input');
+
+const cashAtLocationRadio =  document.getElementById('cash-at-location-payment-button');
+const creditCardNumberInput =  document.getElementById('cc-number');
+const creditCardNameInput =  document.getElementById('cc-name');
+const creditCardDateInput =  document.getElementById('cc-date');
+const creditCardCVCInput =  document.getElementById('cc-cvc');
+
 // Popover initialization
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
+
+
 
 // Datepicker initialization
 $('#datepicker').datepicker({
   uiLibrary: 'bootstrap4'
 });
 
+
+
 // AOS initialization
 AOS.init({
   delay: 200,
 });
+
+
 
 // Buttons constants
 const allTypesButton = document.getElementById('all-types-button');
@@ -109,11 +124,7 @@ const togglerButton = document.getElementById("toggler");
 // Address section
 
 // Payment section
-const cashAtLocationRadio =  document.getElementById('custom-radio-cash-at-location');
-const creditCardNumberInput =  document.getElementById('cc-number');
-const creditCardNameInput =  document.getElementById('cc-name');
-const creditCardDateInput =  document.getElementById('cc-date');
-const creditCardCVCInput =  document.getElementById('cc-cvc');
+
 
 
 // **** 01. Buttons event listener ****
@@ -216,8 +227,7 @@ togglerButton.addEventListener('click', function() {
 
 
 // **** 05. Delivery status function ****
-const pickUpRadio =  document.getElementById('pickup-radio-button');
-const deliveryAddressInput =  document.getElementById('delivery-address-input');
+
 
 // This function will check if the pickup radio is checked
 // If true, add the disabled attribute to the input, otherwise remove it
