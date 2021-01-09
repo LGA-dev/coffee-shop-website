@@ -2,7 +2,6 @@
 @include media-breakpoint-up(sm) {
   #website-logo {
     height: 3.75rem;
-    // background-color: rgba(251, 255, 0, 0.507);
   }
 }
 
@@ -10,44 +9,25 @@
 @include media-breakpoint-up(md) {
   #website-logo {
     height: 4rem;
-    // background-color: rgba(0, 255, 0, 0.507);
   }
 }
 
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
-  #website-logo {
-    // background-color: rgba(0, 255, 213, 0.507);
-  }
-
   // Carousel slide fix
   .carousel {
     height: auto;
     width: 800px;
   }
-
-  .sidebar-section {
-    position: absolute !important;
-  }
-
-  .sidebar-item {
-    position: absolute !important;
-  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @include media-breakpoint-up(xl) {
-  #website-logo {
-    // background-color: rgba(0, 17, 255, 0.507);
-  }
   #reservation-form {
     width: 75%;
   }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
-@include media-breakpoint-up(xxl) {
-  #website-logo {
-    // background-color: rgba(183, 0, 255, 0.507);
-  }
-}
+// @include media-breakpoint-up(xxl) {
+// }

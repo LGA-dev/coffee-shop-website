@@ -39,3 +39,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   text-decoration: underline $primary-color 1px;
   text-underline-offset: 15%;
 }
+
+.fa-question-circle {
+  color: $primary-color !important;
+}
+
+.form-check-input {
+  background-color: $secondary-color !important;
+}

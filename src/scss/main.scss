@@ -13,10 +13,9 @@
   03.f Reviews
   03.g Reservation
   03.h Contact
-  03.i Jumbotron
-  03.j Orders
-    03.j.a Items
-    03.j.b Sidebar
+  03.i Orders section
+    03.i.a Items
+    03.i.b Sidebar
 04. Footer
 ====================================================== 
 */
@@ -63,11 +62,6 @@ h1, h2, h3, .title-font, .card-title {
   text-underline-offset: 20%;
 }
 
-// Shadow for carousel text //unused
-// .text-shadow {
-//   text-shadow: 1px 1px 5px black;
-// }
-
 // Price tags for menu item cards
 .price {
   text-decoration: underline white 1px;
@@ -99,17 +93,24 @@ h1, h2, h3, .title-font, .card-title {
   );
 }
 
+// Fill the image's entire content box
+.image-cover {
+  object-fit: cover;
+}
+
+
 
 /* #    02. Header    # */
-/* ##    03.a Hero    ## */
+
+/* ##    02.a Navbar   ## */
 #website-logo {
   height: 3.5rem;
-  // background-color: rgba(255, 0, 0, 0.5);
 }
 
 
 
 /* #    03. Main    # */
+
 /* ##    03.a Hero    ## */
 #hero {
   background-image: url("/src/assets/images/hero-bg.jpg");
@@ -127,6 +128,7 @@ h1, h2, h3, .title-font, .card-title {
 }
 
 
+
 /* ##    03.d Gallery    ## */
 .carousel-control-prev,
 .carousel-control-next {
@@ -141,31 +143,28 @@ h1, h2, h3, .title-font, .card-title {
 }
 
 
+
 /* ##    03.f Reviews    ## */
 .profile-pic {
   width: 100px;
   height: 100px;
 }
 
+
+
 /* ##    03.g Reservation    ## */
-// Custom radio pointer
-.custom-radio,
-.custom-control-label {
-  cursor: pointer;
-}
 
 // Hide date picker icon
 span.input-group-append {
   display: none;
 }
 
-/* ##    03.b About    ## */
-/* ##    03.c Menu    ## */
-/* ##    03.e News    ## */
-/* ##    03.h Contact    ## */
 
 
-/* ##    03.j.a Items    ## */
+/* ##    03.i Orders section   ## */
+
+/* ###    03.j.a Items    ### */
+
 .panel-header {
   cursor: pointer;
   &-item {
@@ -185,47 +184,10 @@ span.input-group-append {
   }
 }
 
-.form-total-items {
+.form-button-width {
   max-width: 75px;
 }
 
-.order-item-image {
-  object-fit: cover;
-}
-
-// Unused
-
-
-
-.cc-cvc {
-  display: flex;
-  justify-content: space-between;
-}
-
-.popover {
-  max-width: 15rem !important;
-}
-
-.fa-question-circle:hover {
-  color: $primary-color;
-}
-
-
-/* ##    03.j.b Sidebar    ## */
-.sidebar-item {
-  position: unset;
-	top: 0;
-	left: 0;
-	width: 100%;
-  height: 100%;
-}
-
-.make-me-sticky {
-  position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-  padding: 0 15px;
-}
 
 
 /* #    04. Footer    # */
