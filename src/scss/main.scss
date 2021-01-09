@@ -107,7 +107,10 @@ h1, h2, h3, .title-font, .card-title {
   height: 3.5rem;
 }
 
-
+.nav-link.active {
+  text-decoration: underline $primary-color 2px;
+  text-underline-offset: 20%;
+}
 
 /* #    03. Main    # */
 
