@@ -3,14 +3,14 @@
 ## Table of contents
 
 - [General info](#general-info)
-- [Screenshots](#screenshot)
+- [Showcase](#showcase)
 - [Technologies](#technologies)
 - [Setup](#setup)
 - [Status](#status)
 
 ## General info
 
-I made this project to apply everything I'm learning about Bootstrap 4.
+I made this project to apply everything I'm learning about Bootstrap 5.
 
 The site was written from scratch and the design was taken from [this template](https://demo.htmlhunters.com/profi/restaurant.html). <br> I have added and improved a few things to make it more visually appealing.
 
@@ -32,9 +32,9 @@ Not semantic. I feel like it gets a bit bloated with so many classes in a single
 
 I'll create another project with Bootstrap4 to consolidate my knowledge.
 
-## Screenshot
+## Showcase
 
-![Example screenshot](./img/coffee-shop-website.jpg)
+![Example screenshot](./src/assets/images/project_showcase.png)
 
 ## Technologies
 
