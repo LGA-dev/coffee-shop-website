@@ -53,6 +53,7 @@ $('#datepicker').datepicker({
 // AOS initialization
 AOS.init({
   delay: 200,
+  disable: 'mobile'
 });
 
 
@@ -95,7 +96,7 @@ function displayCardType() {
       allMenuCards[i].style.display = "block";
       allMenuCards[i].classList.add('fadeIn');
     } else {
-      console.log("Test");
+      console.log("Error");
     }
   }
 }
@@ -164,10 +165,8 @@ togglerButton.addEventListener('click', function() {
 function deliveryRadioCheck() {
   if (pickUpRadio.checked) {
     deliveryAddressInput.disabled = "disabled";
-    window.alert("Input disabled");
   } else {
     deliveryAddressInput.removeAttribute('disabled');
-    window.alert("Input enabled");
   }
 }
 
