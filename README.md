@@ -30,8 +30,6 @@ The responsiveness. Almost didn't have to use media-queries.<br>
 What I dislike about Bootstrap:<br>
 Not semantic. I feel like it gets a bit bloated with so many classes in a single div.
 
-I'll create another project with Bootstrap4 to consolidate my knowledge.
-
 ## Showcase
 
 ![Example screenshot](./src/assets/images/project_showcase.png)
@@ -41,7 +39,7 @@ I'll create another project with Bootstrap4 to consolidate my knowledge.
 - HTML
 - CSS
 - [SASS](https://github.com/sass/sass)
-- Bootstrap 4
+- Bootstrap 5
 - [Start Bootstrap - Bare](https://github.com/StartBootstrap/startbootstrap-bare)
 - [Bootstrap 4 DatePicker](https://gijgo.com/datepicker/example/bootstrap-4)
 - [FontAwesome](https://fontawesome.com/)
